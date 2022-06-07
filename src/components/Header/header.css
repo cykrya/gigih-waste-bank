@@ -1,0 +1,20 @@
+header {
+    height: 102px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #295A83;
+}
+header img {
+    height: 102px;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+.navigation p {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 50px;
+}
