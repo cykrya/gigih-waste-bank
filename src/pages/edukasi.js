@@ -1,7 +1,7 @@
-export default function Test4() {
+export default function edukasi() {
     return (
       <div className="main-container">
-        <h1>TEST 4</h1>
+        <h1>Edukasi</h1>
       </div>
     );
   }

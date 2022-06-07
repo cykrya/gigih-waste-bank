@@ -1,7 +1,7 @@
-export default function Test1() {
+export default function penukaranpoin() {
     return (
       <div className="main-container">
-        <h1>TEST 1</h1>
+        <h1>penukaranpoin</h1>
       </div>
     );
   }

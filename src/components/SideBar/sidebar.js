@@ -5,16 +5,16 @@ export default function SideBar() {
   return (
     <div className="sidebar">
       <ul>
-        <Link to="/">
+        <Link to="/transaksi">
           <li>Transaksi</li>
         </Link>
-        <Link to="/test2">
+        <Link to="/edukasi">
           <li>Edukasi Pengolahan Sampah</li>
         </Link>
-        <Link to="/test3">
+        <Link to="/penukaranpoin">
           <li>Penukaran Poin</li>
         </Link>
-        <Link to="/test4">
+        <Link to="/histori">
           <li>Histori Transaksi</li>
         </Link>
       </ul>

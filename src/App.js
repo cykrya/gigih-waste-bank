@@ -4,27 +4,31 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Header from './components/Header/header';
 import SideBar from './components/SideBar/sidebar';
-import Test1 from './pages/test1';
-import Test2 from './pages/test2';
-import Test3 from './pages/test3';
-import Test4 from './pages/test4';
+import Home from './pages/home';
+import Login from './pages/login';
+import Transaksi from './pages/transaksi';
+import Edukasi from './pages/edukasi';
+import PenukaranPoin from './pages/penukaranpoin';
+import Histori from './pages/histori';
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <div className="main-container">
       <Router>
-      <SideBar />
-        <Routes>
-          <Route exact path="/" element={<Test1 />} />
-          <Route exact path="/test2" element={<Test2 />} />
-          <Route exact path="/test3" element={<Test3 />} />
-          <Route exact path="/test4" element={<Test4 />} />
-        </Routes>
+      <Header />
+        <div className="main-container">
+          <SideBar />
+          <Routes>
+            <Route exact path="/home" element={<Home />} />
+            <Route exact path="/login" element={<Login />} />
+            <Route exact path="/transaksi" element={<Transaksi />} />
+            <Route exact path="/edukasi" element={<Edukasi />} />
+            <Route exact path="/penukaranpoin" element={<PenukaranPoin />} />
+            <Route exact path="/histori" element={<Histori />} />
+          </Routes>
+        </div>
       </Router>
-      </div>
     </div>
   );
 }
