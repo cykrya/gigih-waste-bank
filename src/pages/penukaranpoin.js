@@ -1,6 +1,6 @@
 export default function penukaranpoin() {
     return (
-      <div className="main-container">
+      <div className="page">
         <h1>penukaranpoin</h1>
       </div>
     );

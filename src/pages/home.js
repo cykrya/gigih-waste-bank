@@ -1,6 +1,6 @@
 export default function home() {
     return (
-      <div className="main-container">
+      <div className="page">
         <h1>Home</h1>
       </div>
     );
