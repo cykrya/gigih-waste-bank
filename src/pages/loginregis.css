@@ -1,0 +1,32 @@
+.loginWrapper {
+    margin-top: 100px;
+    width: 500px;
+    height: 260px;
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: black;
+    display: inline-block;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.registerWrapper {
+    margin-top: 100px;
+    width: 500px;
+    height: 430px;
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: black;
+    display: inline-block;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.lupapassword {
+    font-size: 12px;
+    margin-left: 240px;
+}
+
+.noakun {
+    font-size: 12px;
+}

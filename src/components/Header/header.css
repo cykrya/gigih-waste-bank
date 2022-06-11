@@ -1,9 +1,11 @@
 header {
     height: 102px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #295A83;
+    position: fixed;
 }
 
 header img {
