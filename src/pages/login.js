@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Box, Button, createTheme, FormControl, InputAdornment, TextField, ThemeProvider } from "@mui/material";
 import EmailIcon from '@mui/icons-material/Email';
 import KeyIcon from '@mui/icons-material/Key';
