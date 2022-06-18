@@ -11,7 +11,7 @@ import NumbersIcon from '@mui/icons-material/Numbers';
 import HomeIcon from '@mui/icons-material/Home';
 
 import { useSelector, useDispatch } from 'react-redux';
-import {emailNotelp, password,nama,umur,alamat,jeniskel} from '../components/core/slice'
+import {emailNotelp, password,nama,umur,alamat,jeniskel} from '../components/core/slice.js'
 
 
 const theme = createTheme({
