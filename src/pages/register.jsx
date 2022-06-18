@@ -1,5 +1,5 @@
 import "./loginregis.css"
-import  { useEffect, useState } from "react";
+import  {useState } from "react";
 import { Box, Button, createTheme, FormControl, InputAdornment, TextField, ThemeProvider, MenuItem } from "@mui/material";
 import { Link } from "react-router-dom";
 
