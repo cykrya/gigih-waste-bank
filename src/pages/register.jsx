@@ -1,7 +1,7 @@
 import "./loginregis.css"
 import  {useState,useEffect } from "react";
 import { Box, Button, createTheme, FormControl, InputAdornment, TextField, ThemeProvider, MenuItem } from "@mui/material";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 import EmailIcon from '@mui/icons-material/Email';
 import KeyIcon from '@mui/icons-material/Key';

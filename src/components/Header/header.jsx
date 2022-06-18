@@ -30,9 +30,7 @@ export default function Header() {
             <img src="/gwblogo.png" alt="Logo" />
           </Link>
           <div className="navigation login">
-            <Link to="/profile">
-              {/* <headerLogin name={test3}/> */}
-              
+            <Link to="/profile">   
               <p className="profileName">
                 <span><AccountCircleIcon  sx={{  color: 'grey',fontSize: 40, }}/></span>
                 <span className="nameInside">{test3}</span>
