@@ -2,6 +2,9 @@ import { Box, Button, createTheme, FormControl, InputAdornment, TextField, Theme
 import EmailIcon from '@mui/icons-material/Email';
 import KeyIcon from '@mui/icons-material/Key';
 import { Link } from "react-router-dom";
+import store from "../components/core/store";
+
+
 import "./loginregis.css"
 
 const theme = createTheme({

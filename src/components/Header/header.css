@@ -19,7 +19,6 @@ header img {
 
 .navigation p {
     color: white;
-    font-weight: bold;
     font-size: 20px;
     text-align: center;
     margin: 50px;
@@ -34,4 +33,10 @@ header img {
 
 .navigation a:hover {
     background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nameInside {
+    position: relative;
+    bottom: 15px;
+    left: 25px;
 }

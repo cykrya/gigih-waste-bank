@@ -1,11 +1,6 @@
 import "./histori.css";
 
 export default function histori() {
-<<<<<<< Updated upstream
-    return (
-      <div className="page">
-        <h1>histori</h1>
-=======
   return (
     <div className="sub-container">
       <img
@@ -23,7 +18,6 @@ export default function histori() {
           </div>
         </div>
         <div className="main-content"></div>
->>>>>>> Stashed changes
       </div>
       <img
         className="sidepanel-img"
