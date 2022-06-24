@@ -4,7 +4,7 @@ export const profileSlice = createSlice(
   {
     name: 'profiledata',
     initialState: {
-      emailNotelp:'',
+      email:'',
       password:'',
       nama:'',
       umur:'',
@@ -12,8 +12,8 @@ export const profileSlice = createSlice(
       jeniskel:''
     },
     reducers: {
-      emailNotelp: (state, action) => {
-        state.emailNotelp = action.payload
+      email: (state, action) => {
+        state.email = action.payload
       },
       password: (state, action) => {
         state.password = action.payload
@@ -35,6 +35,6 @@ export const profileSlice = createSlice(
 )
 
 // Action creators are generated for each case reducer function
-export const { emailNotelp, password, nama, umur,alamat,jeniskel } = profileSlice.actions
+export const { email, password, nama, umur,alamat,jeniskel } = profileSlice.actions
 
 export default profileSlice.reducer

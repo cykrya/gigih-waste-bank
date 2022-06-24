@@ -11,7 +11,7 @@ import NumbersIcon from '@mui/icons-material/Numbers';
 import HomeIcon from '@mui/icons-material/Home';
 
 import { useSelector, useDispatch } from 'react-redux';
-import {emailNotelp, password,nama,umur,alamat,jeniskel} from '../components/core/slice'
+import {email, password,nama,umur,alamat,jeniskel} from '../components/core/slice'
 
 
 const theme = createTheme({
@@ -55,14 +55,13 @@ const Gender = [
 
   const InsertProfileData = (e) => {
     e.preventDefault();
-    console.log("searching track");
     console.log(profemailPhone);
     console.log(profpassword);  
     console.log(profname);  
     console.log(profage);  
     console.log(profaddress);  
     console.log(profgender);
-    dispatch(emailNotelp(profemailPhone));
+    dispatch(email(profemailPhone));
     dispatch(password(profpassword));  
     dispatch(nama(profname));  
     dispatch(umur(profage));  
@@ -71,7 +70,7 @@ const Gender = [
     
   };
 
-  const test1=((useSelector((state)=>state.profile)).emailNotelp);
+  const test1=((useSelector((state)=>state.profile)).email);
   const test2=((useSelector((state)=>state.profile)).password);
   const test3=((useSelector((state)=>state.profile)).nama);
   const test4=((useSelector((state)=>state.profile)).umur);

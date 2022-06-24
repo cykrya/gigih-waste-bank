@@ -4,7 +4,7 @@ import  { useEffect, useState } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 export default function Header() {
-  const test1=((useSelector((state)=>state.profile)).emailNotelp);
+  const test1=((useSelector((state)=>state.profile)).email);
   const test2=((useSelector((state)=>state.profile)).password);
   const test3=((useSelector((state)=>state.profile)).nama);
   const test4=((useSelector((state)=>state.profile)).umur);
