@@ -11,7 +11,7 @@ import Transaksi from './pages/transaksi';
 import Edukasi from './pages/edukasi';
 import PenukaranPoin from './pages/penukaranpoin';
 import Histori from './pages/histori';
-
+import Profile from './pages/profile'
 
 function App() {
   return (
@@ -28,6 +28,7 @@ function App() {
             <Route exact path="/edukasi" element={<Edukasi />} />
             <Route exact path="/penukaranpoin" element={<PenukaranPoin />} />
             <Route exact path="/histori" element={<Histori />} />
+            <Route exact path="/profile" element={<Profile />} />
           </Routes>
         </div>
       </Router>
