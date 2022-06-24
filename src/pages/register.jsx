@@ -28,16 +28,16 @@ const theme = createTheme({
 
 const Gender = [
   {
-    value: 'Male',
-    label: 'Male',
+    value: 'Pria',
+    label: 'Pria',
   },
   {
-    value: 'Female',
-    label: 'Female',
+    value: 'Wanita',
+    label: 'Wanita',
   },
   {
-    value: 'Others',
-    label: 'Others',
+    value: 'Lain',
+    label: 'Lain',
   },
 ];
 
