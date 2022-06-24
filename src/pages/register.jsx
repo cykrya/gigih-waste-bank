@@ -95,7 +95,7 @@ const Gender = [
               <FormControl className="ssearch">
                 <Box mt={0.5} sx={{m:1, pt:3} }>
                   <IconTextField onChange={(e) => setprofEmailPhone(e.target.value)}
-                    label="Email/No Telp"
+                    label="Email"
                     type="email"
                     size="small"
                     sx={{width: '50ch',fontSize: 12}}
