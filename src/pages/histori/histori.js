@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./histori.css";
 import { Box, Button } from "@mui/material";
-import HistoryCard from "../components/HistoryCard/historycard";
+import HistoryCard from "../../components/HistoryCard/historycard";
 
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import InboxIcon from "@mui/icons-material/Inbox";
-import RightPanel from "../components/PagePanel/rightpanel";
-import LeftPanel from "../components/PagePanel/leftpanel";
+import RightPanel from "../../components/PagePanel/rightpanel";
+import LeftPanel from "../../components/PagePanel/leftpanel";
 
 export default function Histori() {
   const [data, setData] = useState([]);
