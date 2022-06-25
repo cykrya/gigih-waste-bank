@@ -12,6 +12,7 @@ import HomeIcon from '@mui/icons-material/Home';
 
 import { useSelector, useDispatch } from 'react-redux';
 import {email, password,nama,umur,alamat,jeniskel} from '../../components/core/slice';
+import CheckData from "./alert";
 
 const theme = createTheme({
   palette: {
@@ -58,6 +59,19 @@ const Gender = [
     console.log(profage);  
     console.log(profaddress);  
     console.log(profgender);
+    // <CheckData 
+    //   test1={test1}
+    //   test2={test2}
+    //   test3={test3}
+    //   test4={test4}
+    //   test5={test5}
+    //   test6={test6} 
+    //   profemail={profemail}
+    //   profpassword={profpassword} 
+    //   profname={profname} 
+    //   profage={profage}
+    //   profaddress={profaddress}
+    //   profgender={profgender} />
     dispatch(email(profemail));
     dispatch(password(profpassword));
     dispatch(nama(profname));  
@@ -103,7 +117,7 @@ const Gender = [
                   <span>
                     <IconTextField  onChange={(e) => setprofPassword(e.target.value)}
                       label="Password"
-                      type="password"
+                      type="current-password"
                       size="small"
                       sx={{width: '50ch',fontSize: 12}}
                       iconStart={<KeyIcon sx={{ color: "black"}} />}
