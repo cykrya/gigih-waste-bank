@@ -1,7 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Box, Button, createTheme, FormControl, InputAdornment, TextField, ThemeProvider } from "@mui/material";
 import EmailIcon from '@mui/icons-material/Email';
 import KeyIcon from '@mui/icons-material/Key';
 import { Link } from "react-router-dom";
+// import store from "../../components/core/store";
+
+
 import "./loginregis.css"
 
 const theme = createTheme({
@@ -57,7 +61,6 @@ export default function login() {
                 </Link>
               </FormControl>
               </form>
-              
           </div>
         </div>
       </ThemeProvider>

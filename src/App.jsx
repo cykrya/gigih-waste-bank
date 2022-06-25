@@ -1,16 +1,16 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import React from 'react'
 
 import Header from './components/Header/header';
 import SideBar from './components/SideBar/sidebar';
-import Home from './pages/home';
-import Login from './pages/login';
-import Register from './pages/register';
-import Transaksi from './pages/transaksi';
-import Edukasi from './pages/edukasi';
-import PenukaranPoin from './pages/penukaranpoin';
-import Histori from './pages/histori';
+import Home from './pages/home/home';
+import Login from './pages/loginregis/login';
+import Register from './pages/loginregis/register';
+import Transaksi from './pages/transaksi/transaksi';
+import Edukasi from './pages/edukasi/edukasi';
+import PenukaranPoin from './pages/penukaranpoin/penukaranpoin';
+import Histori from './pages/histori/histori';
 
 
 function App() {
