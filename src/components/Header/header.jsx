@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import  { useEffect, useState } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+
+
 export default function Header() {
   const test1=((useSelector((state)=>state.profile)).email);
   const test2=((useSelector((state)=>state.profile)).password);
@@ -22,7 +24,6 @@ export default function Header() {
   });
 
   if(test1){
-    
     return (
       <>
         <header className="header-wrapper">

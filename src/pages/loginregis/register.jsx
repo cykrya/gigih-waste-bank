@@ -11,8 +11,7 @@ import NumbersIcon from '@mui/icons-material/Numbers';
 import HomeIcon from '@mui/icons-material/Home';
 
 import { useSelector, useDispatch } from 'react-redux';
-import {email, password,nama,umur,alamat,jeniskel} from '../components/core/slice'
-
+import {email, password,nama,umur,alamat,jeniskel} from '../../components/core/slice';
 
 const theme = createTheme({
   palette: {
@@ -41,11 +40,9 @@ const Gender = [
   },
 ];
 
-
-
 // export default function Register() {
   const Register = () => {
-  const [profemailPhone, setprofEmailPhone] = useState("");
+  const [profemail, setprofEmail] = useState("");
   const [profpassword, setprofPassword] = useState("");
   const [profname, setprofName] = useState("");
   const [profage, setprofAge] = useState("");
@@ -55,19 +52,18 @@ const Gender = [
 
   const InsertProfileData = (e) => {
     e.preventDefault();
-    console.log(profemailPhone);
+    console.log(profemail);
     console.log(profpassword);  
     console.log(profname);  
     console.log(profage);  
     console.log(profaddress);  
     console.log(profgender);
-    dispatch(email(profemailPhone));
-    dispatch(password(profpassword));  
+    dispatch(email(profemail));
+    dispatch(password(profpassword));
     dispatch(nama(profname));  
-    dispatch(umur(profage));  
-    dispatch(alamat(profaddress));  
-    dispatch(jeniskel(profgender));    
-    
+    dispatch(umur(profage));
+    dispatch(alamat(profaddress));
+    dispatch(jeniskel(profgender));
   };
 
   const test1=((useSelector((state)=>state.profile)).email);
@@ -94,7 +90,7 @@ const Gender = [
             <form onSubmit={InsertProfileData} className="playlistForm">
               <FormControl className="ssearch">
                 <Box mt={0.5} sx={{m:1, pt:3} }>
-                  <IconTextField onChange={(e) => setprofEmailPhone(e.target.value)}
+                  <IconTextField onChange={(e) => setprofEmail(e.target.value)}
                     label="Email"
                     type="email"
                     size="small"
