@@ -23,11 +23,11 @@ export default function Header() {
     
   });
 
-  if(test1){
+  if(test1){ 
     return (
       <>
         <header className="header-wrapper">
-          <Link to="/home">
+          <Link to="/">
             <img src="/gwblogo.png" alt="Logo" />
           </Link>
           <div className="navigation login">
@@ -46,7 +46,7 @@ export default function Header() {
 
   return (
     <header className="header-wrapper">
-      <Link to="/home">
+      <Link to="/">
         <img src="/gwblogo.png" alt="Logo" />
       </Link>
       <div className="navigation">
