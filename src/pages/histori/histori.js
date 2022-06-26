@@ -14,7 +14,7 @@ export default function Histori() {
   useEffect(() => {
     const getData = async () => {
       try {
-        const res = await fetch("http://localhost:1337/api/transactions?populate=*&filters[user_id][id]=1").then(
+        const res = await fetch("http://localhost:1337/api/transactions?populate=*&filters[user_id][id]=2").then(
           (response) => response.json()
         );
         setData(res.data);
