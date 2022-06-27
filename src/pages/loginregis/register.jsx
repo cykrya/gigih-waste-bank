@@ -11,8 +11,8 @@ import NumbersIcon from '@mui/icons-material/Numbers';
 import HomeIcon from '@mui/icons-material/Home';
 
 import { useSelector, useDispatch } from 'react-redux';
-import {email, password,nama,umur,alamat,jeniskel} from '../../components/core/slice';
-import CheckData from "./alert";
+import {email, password,nama,umur,alamat,jeniskel,hadLogin} from '../../components/core/slice';
+//import CheckData from "./alert";
 
 const theme = createTheme({
   palette: {
@@ -48,7 +48,7 @@ const Gender = [
   const [profname, setprofName] = useState("");
   const [profage, setprofAge] = useState("");
   const [profaddress, setprofAddress] = useState("");
-  const [profgender, setprofGender] = useState('Male');
+  const [profgender, setprofGender] = useState('Pria');
   const dispatch = useDispatch()
 
   const InsertProfileData = (e) => {
@@ -59,25 +59,14 @@ const Gender = [
     console.log(profage);  
     console.log(profaddress);  
     console.log(profgender);
-    // <CheckData 
-    //   test1={test1}
-    //   test2={test2}
-    //   test3={test3}
-    //   test4={test4}
-    //   test5={test5}
-    //   test6={test6} 
-    //   profemail={profemail}
-    //   profpassword={profpassword} 
-    //   profname={profname} 
-    //   profage={profage}
-    //   profaddress={profaddress}
-    //   profgender={profgender} />
+   
     dispatch(email(profemail));
     dispatch(password(profpassword));
     dispatch(nama(profname));  
     dispatch(umur(profage));
     dispatch(alamat(profaddress));
     dispatch(jeniskel(profgender));
+    dispatch(hadLogin(true));
   };
 
   const test1=((useSelector((state)=>state.profile)).email);
