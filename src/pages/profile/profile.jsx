@@ -2,6 +2,7 @@ import "./profile.css"
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { Button,createTheme,ThemeProvider,Box} from "@mui/material";
 import { useSelector} from 'react-redux';
+import { Link } from "react-router-dom";
 
 
 const theme1 = createTheme({
@@ -56,13 +57,18 @@ const Profile = () => {
               <p className="data">{test6}</p>
               <p>Alamat</p>
               <p className="data">{test5}</p>
-            </div>
+              </div>
             <ThemeProvider theme={theme1}>
-<Box><Button variant= "contained" type="input"  className="button register" sx={{ color: 'white' ,width:150, borderRadius: '25px' , mt: 6}}>Edit Akun</Button></Box></ThemeProvider>
+<Box>
+<Link to="/editprofile">
+<Button  variant= "contained" type="input"  className="button register" sx={{ color: 'white' ,width:150, borderRadius: '25px' , mt: 0}}>Edit Akun</Button>
+          </Link>
+         
+</Box></ThemeProvider>
 
 
 <ThemeProvider theme={theme2}>
-<Button variant="contained" type="input"  className="button register" sx={{ color: 'white' ,width:150, borderRadius: '25px', mt: 1}}>Keluar</Button></ThemeProvider>
+<Button href="/login" variant="contained" type="input"  className="button register" sx={{ color: 'white' ,width:150, borderRadius: '25px', mt: 1}}>Keluar</Button></ThemeProvider>
 
             </div>
         </div>

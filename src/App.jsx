@@ -12,6 +12,7 @@ import Edukasi from './pages/edukasi/edukasi';
 import PenukaranPoin from './pages/penukaranpoin/penukaranpoin';
 import Histori from './pages/histori/histori';
 import Profile from './pages/profile/profile';
+import Editprofile from './pages/editprofile';
 
 
 
@@ -31,6 +32,7 @@ const App = () => {
             <Route exact path="/penukaranpoin" element={<PenukaranPoin />} />
             <Route exact path="/histori" element={<Histori />} />
             <Route exact path="/profile" element={<Profile />} />
+            <Route exact path="/editprofile" element={<Editprofile />} />
           </Routes>
         </div>
       </Router>
