@@ -1,0 +1,39 @@
+.editWrapper {
+    position: relative;
+    margin-top: 2px;
+    width: 500px;
+    height: 499px;
+    background-color: #ffffffc1;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    margin-left: 260px;
+
+    
+    
+    
+}
+
+.editprofilePage {
+    position: st;
+}
+
+.profileHeader {
+    background-color: #EEF7F2;
+    border-bottom: 1px solid rgb(0, 0, 0);
+
+    
+}
+
+.profileHeader p {
+    font-size: 25px;
+    margin: 0;
+    color: #295A83;
+    text-align: left;
+    padding: 5px;
+}
+
+.page-edit{
+    background-color: #ffffffc1;
+    margin-top: 100px;
+}

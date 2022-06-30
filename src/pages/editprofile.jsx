@@ -1,8 +1,8 @@
-import "./loginregis.css"
+import "./loginregis/loginregis.css"
+import "./editprofile.css"
 import  {useState,useEffect } from "react";
 import { Box, Button, createTheme, FormControl, InputAdornment, TextField, ThemeProvider, MenuItem } from "@mui/material";
 //import { Link } from "react-router-dom";
-
 import EmailIcon from '@mui/icons-material/Email';
 import KeyIcon from '@mui/icons-material/Key';
 import PersonIcon from '@mui/icons-material/Person';
@@ -11,10 +11,10 @@ import NumbersIcon from '@mui/icons-material/Numbers';
 import HomeIcon from '@mui/icons-material/Home';
 
 import { useSelector, useDispatch } from 'react-redux';
-import {email, password,nama,umur,alamat,jeniskel,hadLogin} from '../../components/core/slice';
+import {email, password,nama,umur,alamat,jeniskel,hadLogin} from '../components/core/slice'
 
-import RegisterSuccess from "./alerts/RegisterSuccess";
-import RegisterFailed from "./alerts/RegisterFailed";
+
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -42,18 +42,36 @@ const Gender = [
   },
 ];
 
+
+
 // export default function Register() {
-  const Register = () => {
-  const [profemail, setprofEmail] = useState("");
+  const Editprofile = () => {
+  const [profemailPhone, setprofEmailPhone] = useState("");
   const [profpassword, setprofPassword] = useState("");
   const [profname, setprofName] = useState("");
   const [profage, setprofAge] = useState("");
   const [profaddress, setprofAddress] = useState("");
   const [profgender, setprofGender] = useState('Pria');
-  const [Open, setOpen] = useState(false);
-  const [Open2, setOpen2] = useState(false);
   const dispatch = useDispatch()
-  
+  dispatch(hadLogin(true));
+    
+  const InsertProfileData = (e) => {
+    e.preventDefault();
+    console.log(profemailPhone);
+    console.log(profpassword);  
+    console.log(profname);  
+    console.log(profage);  
+    console.log(profaddress);  
+    console.log(profgender);
+    dispatch(email(profemailPhone));
+    dispatch(password(profpassword));  
+    dispatch(nama(profname));  
+    dispatch(umur(profage));  
+    dispatch(alamat(profaddress));  
+    dispatch(jeniskel(profgender));    
+    
+  };
+
   const test1=((useSelector((state)=>state.profile)).email);
   const test2=((useSelector((state)=>state.profile)).password);
   const test3=((useSelector((state)=>state.profile)).nama);
@@ -68,58 +86,22 @@ const Gender = [
     console.log("umur: "+test4);
     console.log("nama alamat: "+test5);
     console.log("jenis kelamin: "+test6);
-  },[test1]);
+  });
 
-  useEffect(() => {
-    setTimeout(() => {
-      setOpen(false);
-    }, 3000);
-  }, [Open]);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setOpen2(false);
-    }, 3000);
-  }, [Open2]);
-
-  const InsertProfileData = (e) => {
-    e.preventDefault();
-    console.log(profemail);
-    console.log(profpassword);  
-    console.log(profname);  
-    console.log(profage);  
-    console.log(profaddress);  
-    console.log(profgender);
-   
-    dispatch(email(profemail));
-    dispatch(password(profpassword));
-    dispatch(nama(profname));  
-    dispatch(umur(profage));
-    dispatch(alamat(profaddress));
-    dispatch(jeniskel(profgender));
-
-    if ((profemail.length>1) & (profpassword.length>1)& (profname.length>1) & (profaddress.length>1)){
-      console.log("userdata ada");
-      setOpen(true);
-      dispatch(hadLogin(true));
-      return{
-
-      }
-    }
-      setOpen2(true);
-      console.log("user data tidak ditemukan");
-  };
     return (
+      <div className="editprofilePage">
       <ThemeProvider theme={theme}>
-        <div className="page register">
-        <RegisterSuccess Open={Open}/>
-        <RegisterFailed Open2={Open2}/>
-          <div className="registerWrapper"> 
-            <form onSubmit={InsertProfileData} className="playlistForm">
+        <div className="page-edit">
+          <div className="editWrapper"> 
+            <div className="profileHeader"><p className="headerName">Profil</p></div>
+            <div className="profileContent">
+              <form onSubmit={InsertProfileData} className="playlistForm">
               <FormControl className="ssearch">
                 <Box mt={0.5} sx={{m:1, pt:3} }>
-                  <IconTextField onChange={(e) => setprofEmail(e.target.value)}
+                  <IconTextField onChange={(e) => setprofEmailPhone(e.target.value)}
                     label="Email"
+                    value={profemailPhone}
                     type="email"
                     size="small"
                     sx={{width: '50ch',fontSize: 12}}
@@ -131,7 +113,8 @@ const Gender = [
                   <span>
                     <IconTextField  onChange={(e) => setprofPassword(e.target.value)}
                       label="Password"
-                      type="current-password"
+                      value={test2}
+                      type="password"
                       size="small"
                       sx={{width: '50ch',fontSize: 12}}
                       iconStart={<KeyIcon sx={{ color: "black"}} />}
@@ -142,6 +125,7 @@ const Gender = [
                 <Box mt={0.5} sx={{m:1, mb:0.3} }>
                   <IconTextField  onChange={(e) => setprofName(e.target.value)}
                     label="Nama"
+                    value={test3}
                     type="text"
                     size="small"
                     sx={{width: '50ch',fontSize: 12}}
@@ -152,6 +136,7 @@ const Gender = [
                 <Box mt={0.5} sx={{m:1, mb:0.3} }>
                   <IconTextField  onChange={(e) => setprofAge(e.target.value)}
                     label="umur"
+                    value={test4}
                     type="number"
                     size="small"
                     sx={{width: '50ch',fontSize: 12}}
@@ -162,6 +147,7 @@ const Gender = [
                 <Box mt={0.5} sx={{m:1,mb:0.3} }>
                   <IconTextField  onChange={(e) => setprofAddress(e.target.value)}
                     label="alamat"
+                    value={test5}
                     type="text"
                     size="small"
                     sx={{width: '50ch',fontSize: 12}}
@@ -196,15 +182,18 @@ const Gender = [
 
                 <Box mt={0.5} sx={{mt:3,mb:0.3}}>
                   {/* <Link to="/home"> */}
-                    <Button variant="contained" type="input"  className="button register" sx={{ color: 'white' ,width:150, borderRadius: '25px'}}>Masuk</Button>
+                    <Button variant="contained" type="input"  className="button register" sx={{ color: 'white' ,width:150, borderRadius: '25px'}}>Simpan</Button>
                   {/* </Link> */}
                 </Box>
                 
               </FormControl>
-            </form> 
+              </form>
+              
+            </div> 
           </div>
         </div>
       </ThemeProvider>
+      </div>
     );
   }
 
@@ -225,4 +214,4 @@ const Gender = [
     );
   };
 
-  export default Register;
+  export default Editprofile;
