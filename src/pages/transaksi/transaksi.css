@@ -8,7 +8,7 @@
 
 .transaction-contents {
     position: relative;
-    width: 620px;
+    width: 600px;
     height: 100%;
     background: #EEF7F2;
 }
@@ -20,7 +20,7 @@
 }
 
 .contents-title h1 {
-    width: 620px;
+    width: 600px;
     height: 84px;
     margin-top: 102px;
     background: #EBEBEB;
