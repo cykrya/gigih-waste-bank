@@ -69,6 +69,7 @@ const Gender = [
     dispatch(umur(profage));  
     dispatch(alamat(profaddress));  
     dispatch(jeniskel(profgender));    
+
     
   };
 
@@ -86,7 +87,13 @@ const Gender = [
     console.log("umur: "+test4);
     console.log("nama alamat: "+test5);
     console.log("jenis kelamin: "+test6);
-  });
+    setprofEmailPhone(test1);
+    setprofPassword(test2);
+    setprofName(test3);
+    setprofAge(test4);
+    setprofAddress(test5);
+    setprofGender(test6);
+  },[dispatch]);
 
 
     return (
@@ -113,7 +120,7 @@ const Gender = [
                   <span>
                     <IconTextField  onChange={(e) => setprofPassword(e.target.value)}
                       label="Password"
-                      value={test2}
+                      value={profpassword}
                       type="password"
                       size="small"
                       sx={{width: '50ch',fontSize: 12}}
@@ -125,7 +132,7 @@ const Gender = [
                 <Box mt={0.5} sx={{m:1, mb:0.3} }>
                   <IconTextField  onChange={(e) => setprofName(e.target.value)}
                     label="Nama"
-                    value={test3}
+                    value={profname}
                     type="text"
                     size="small"
                     sx={{width: '50ch',fontSize: 12}}
@@ -136,7 +143,7 @@ const Gender = [
                 <Box mt={0.5} sx={{m:1, mb:0.3} }>
                   <IconTextField  onChange={(e) => setprofAge(e.target.value)}
                     label="umur"
-                    value={test4}
+                    value={profage}
                     type="number"
                     size="small"
                     sx={{width: '50ch',fontSize: 12}}
@@ -147,7 +154,7 @@ const Gender = [
                 <Box mt={0.5} sx={{m:1,mb:0.3} }>
                   <IconTextField  onChange={(e) => setprofAddress(e.target.value)}
                     label="alamat"
-                    value={test5}
+                    value={profaddress}
                     type="text"
                     size="small"
                     sx={{width: '50ch',fontSize: 12}}
