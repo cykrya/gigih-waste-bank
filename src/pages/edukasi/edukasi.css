@@ -6,7 +6,7 @@
 }
 
 .edukasi-wrapper {
-    width: 70%;
+    width: 700px;
     display: grid;
 }
 
@@ -29,21 +29,25 @@
 
 .h1-edukasi {
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .isi {
     margin-left: 15px;
-    font-size: 16px;
+    font-size: 2wv;
     padding: 0px 15px;
     text-align: justify;
 }
 
 .moredetails {
-    margin-top: 15px;
+    margin-top: 10px;
     margin-right: 25px;
     float: right;
     font-size: 12px;
+}
+
+.content-details {
+    margin-top: 20px;
 }
 
 .c33 {

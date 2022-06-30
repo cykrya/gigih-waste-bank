@@ -17,12 +17,11 @@ export default function Edukasi() {
           <h1 className="h1-edukasi">Pengertian Sampah Organik dan Anorganik</h1>
           <div className="content-details">
             <img src='/img/c1.png' alt="jpg" className='icon c1'></img>  
-            <div className="isi c1">Sampah organik adalah bahan bahan yang sudah dibuang dan sudah tidak terpakai
+            <p className="isi c1">Sampah organik adalah bahan bahan yang sudah dibuang dan sudah tidak terpakai
             yang berasal dari hasil produk berbahan dasar hayati yang mudah terdegradasi oleh mikroorganisme. 
             Proses degradasi oleh mikroorganisme berlangsung secara alami. Sampah Organik dapat dimanfaatkan 
-            kembali dengan dijadikan pupuk kompos yang berguna menyuburkan  tanaman. Sampah anorganik adalah bahan bahan yang 
-            sudah dibuang dan sudah tid[...]
-            </div>
+            kembali dengan dijadikan pupuk kompos yang berguna menyuburkan  tanaman. Sampah anorganik adalah bahan [...]
+            </p>
               <Link to="/Aone">
                   <a className= "moredetails">Baca Selengkapnya...</a>
                 </Link>
@@ -50,7 +49,7 @@ export default function Edukasi() {
         </div>
 
         <div className="EdukasiContent">
-          <h1 className="h1-edukasi">Cara Mengolah Sampah Organik Bekas Menjadi Pupuk</h1>
+          <h1 className="h1-edukasi">Pengolahan Sampah Organik Bekas Menjadi Pupuk</h1>
           <div className="content-details">
             <img src='/img/c3.png' alt="jpg" className='icon c3'></img>  
               <div className="isi c3">Jenis – Jenis Sampah Organik
@@ -58,7 +57,7 @@ export default function Edukasi() {
                 umumnya tidak menyebabkan tanah dan tanaman menjadi rusak walaupun digunakan sesering mungkin.
                 mengandung Giberelin atau asam giberelat (GA), yaitu hormon perangsang pertumbuhan tanaman untuk 
                 memicu munculnya bunga dan pembungaan yang serempak. memiliki bahan pengikat, sehingga larutan 
-                pupuk yang diberikan ke permukaan tanah bisa lang[...]
+                pupuk yang diberikan ke permukaan tanah bis[...]
               </div>
               <Link to="/Athree">
                 <a className= "moredetails c33">Baca Selengkapnya...</a>
