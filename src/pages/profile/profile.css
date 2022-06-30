@@ -1,26 +1,30 @@
 .profileWrapper {
     position: relative;
     margin-top: 102px;
-    width: 500px;
+    width: 530px;
     height: 499px;
     background-color: #ffffffc1;
     color: black;
     display: inline-block;
     text-align: center;
-    margin-left: 522px;
+    
 
     
     
     
 }
 
-/* .profilePage {
-    background-image: url("./image/plastic-3491137.jpg");
-} */
+.profilePage {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
 
 .profileHeader {
     background-color: #EEF7F2;
     border-bottom: 1px solid rgb(0, 0, 0);
+    
 
     
 }
@@ -35,7 +39,7 @@
 
 .profileContent {
     color: #616161 ;
-
+    
     
 }
 
@@ -54,3 +58,7 @@
     font-weight: bold;
     color: black;
 } 
+
+.LPanel {
+    margin-left: 262px;
+}
