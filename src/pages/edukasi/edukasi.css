@@ -9,10 +9,8 @@
     display: grid;
 }
 
-.content {
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+.EdukasiContent {
+    margin: 20px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 50px;
@@ -35,7 +33,7 @@
 
 .isi {
     margin-left: 15px;
-    font-size: 18px;
+    font-size: 16px;
     padding: 0px 15px;
     text-align: justify;
 }
