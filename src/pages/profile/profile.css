@@ -24,9 +24,6 @@
 .profileHeader {
     background-color: #EEF7F2;
     border-bottom: 1px solid rgb(0, 0, 0);
-    
-
-    
 }
 
 .profileHeader p {
@@ -38,9 +35,7 @@
 }
 
 .profileContent {
-    color: #616161 ;
-    
-    
+    color: #616161;
 }
 
 .profileName {
