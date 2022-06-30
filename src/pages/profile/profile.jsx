@@ -3,6 +3,8 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { Button,createTheme,ThemeProvider,Box} from "@mui/material";
 import { useSelector} from 'react-redux';
 import { Link } from "react-router-dom";
+import RightPanel from "../../components/PagePanel/rightpanel";
+import LeftPanel from "../../components/PagePanel/leftpanel"; 
 
 
 const theme1 = createTheme({
@@ -42,6 +44,8 @@ const Profile = () => {
 
     return (
       <div className="profilePage">
+        <div className="LPanel">
+          <LeftPanel/></div>
         <div className="profileWrapper">
           <div className="profileHeader"><p className="headerName">Profil</p>
           </div>
@@ -72,6 +76,8 @@ const Profile = () => {
 
             </div>
         </div>
+        <RightPanel/>
+        
      </div>
     );
   }

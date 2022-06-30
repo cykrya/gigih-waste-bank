@@ -1,13 +1,12 @@
 .editWrapper {
     position: relative;
-    margin-top: 2px;
-    width: 500px;
+    
+    width: 530px;
     height: 499px;
     background-color: #ffffffc1;
     color: black;
     display: inline-block;
     text-align: center;
-    margin-left: 522px;
 
     
     
@@ -15,7 +14,11 @@
 }
 
 .editprofilePage {
-    position: st;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 300px;
 }
 
 .profileHeader {
@@ -36,4 +39,7 @@
 .page-edit{
     background-color: #ffffffc1;
     margin-top: 100px;
+}
+.LPanel {
+    margin-left: 262px;
 }

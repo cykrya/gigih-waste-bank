@@ -12,6 +12,8 @@ import HomeIcon from '@mui/icons-material/Home';
 
 import { useSelector, useDispatch } from 'react-redux';
 import {email, password,nama,umur,alamat,jeniskel,hadLogin} from '../components/core/slice'
+import RightPanel from "../components/PagePanel/rightpanel";
+import LeftPanel from "../components/PagePanel/leftpanel"; 
 
 
 
@@ -98,6 +100,8 @@ const Gender = [
 
     return (
       <div className="editprofilePage">
+        <div className="LPanel">
+          <LeftPanel/></div>
       <ThemeProvider theme={theme}>
         <div className="page-edit">
           <div className="editWrapper"> 
@@ -200,6 +204,7 @@ const Gender = [
           </div>
         </div>
       </ThemeProvider>
+      <RightPanel/>
       </div>
     );
   }
