@@ -15,6 +15,7 @@ import Profile from './pages/profile/profile';
 import A1 from './pages/edukasi/edukasiPage/A1';
 import A2 from './pages/edukasi/edukasiPage/A2';
 import A3 from './pages/edukasi/edukasiPage/A3';
+import Editprofile from './pages/editprofile';
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
             <Route exact path="/Aone" element={<A1/>} />
             <Route exact path="/Atwo" element={<A2/>} />
             <Route exact path="/Athree" element={<A3/>} />
+            <Route exact path="/editprofile" element={<Editprofile />} />
           </Routes>
         </div>
       </Router>
