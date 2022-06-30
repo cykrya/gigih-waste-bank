@@ -2,14 +2,28 @@ import { createSlice } from '@reduxjs/toolkit'
 
 export const profileSlice = createSlice(
   {
+    // name: 'profiledata',
+    // initialState: {
+    //   emailLog:'johndoe@gmail.com',
+    //   passwordLog:'john12345',
+    //   email:'',
+    //   password:'',
+    //   nama:'',
+    //   umur:'',
+    //   alamat:'',
+    //   jeniskel:'',
+    //   hadLogin:false,
     name: 'profiledata',
     initialState: {
-      email:'',
-      password:'',
-      nama:'',
-      umur:'',
-      alamat:'',
-      jeniskel:''
+      // emailLog:'johndoe@gmail.com',
+      // passwordLog:'john12345',
+      email:'johndoe@gmail.com',
+      password:'john12345',
+      nama:'John Doe',
+      umur:'21',
+      alamat:'totally Sus St, Block C no. 3',
+      jeniskel:'Pria',
+      hadLogin:false,
     },
     reducers: {
       email: (state, action) => {
@@ -30,11 +44,14 @@ export const profileSlice = createSlice(
       jeniskel: (state, action) => {
           state.jeniskel = action.payload
       },
+      hadLogin: (state, action) => {
+        state.hadLogin = action.payload
+    },
     },
   }
 )
 
 // Action creators are generated for each case reducer function
-export const { email, password, nama, umur,alamat,jeniskel } = profileSlice.actions
+export const { emailLog, passwordLog,email, password, nama, umur,alamat,jeniskel, hadLogin } = profileSlice.actions
 
 export default profileSlice.reducer

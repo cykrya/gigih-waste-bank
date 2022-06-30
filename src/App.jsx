@@ -8,13 +8,15 @@ import Home from './pages/home/home';
 import Login from './pages/loginregis/login';
 import Register from './pages/loginregis/register';
 import Transaksi from './pages/transaksi/transaksi';
-import Edukasi from './pages/edukasi/edukasi';
+import Edukasi from './pages/edukasi/Edukasi';
 import PenukaranPoin from './pages/penukaranpoin/penukaranpoin';
 import HistoriPoin from './pages/penukaranpoin/historipoin';
 import Histori from './pages/histori/histori';
 import Profile from './pages/profile/profile';
-
-
+import A1 from './pages/edukasi/edukasiPage/A1';
+import A2 from './pages/edukasi/edukasiPage/A2';
+import A3 from './pages/edukasi/edukasiPage/A3';
+import Editprofile from './pages/editprofile';
 
 const App = () => {
   return (
@@ -33,6 +35,10 @@ const App = () => {
             <Route exact path="/historipoin" element={<HistoriPoin />} />
             <Route exact path="/histori" element={<Histori />} />
             <Route exact path="/profile" element={<Profile />} />
+            <Route exact path="/Aone" element={<A1/>} />
+            <Route exact path="/Atwo" element={<A2/>} />
+            <Route exact path="/Athree" element={<A3/>} />
+            <Route exact path="/editprofile" element={<Editprofile />} />
           </Routes>
         </div>
       </Router>
