@@ -1,5 +1,7 @@
 .App {
     text-align: center;
+    height: 100%;
+    margin: 0;
 }
 
 .App-logo {
@@ -48,7 +50,7 @@ a {
 .page {
     margin-top: 100px;
     width: 100%;
-    height: 100%;
+    height: 85vh;
     background-color: #EEF7F2;
     margin-left: 262.25px;
 }

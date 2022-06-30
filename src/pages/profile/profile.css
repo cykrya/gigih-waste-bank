@@ -8,11 +8,8 @@
     display: inline-block;
     text-align: center;
     margin-left: 522px;
-
-    
-    
-    
 }
+
 
 /* .profilePage {
     background-image: url("./image/plastic-3491137.jpg");
@@ -21,8 +18,6 @@
 .profileHeader {
     background-color: #EEF7F2;
     border-bottom: 1px solid rgb(0, 0, 0);
-
-    
 }
 
 .profileHeader p {
@@ -34,9 +29,7 @@
 }
 
 .profileContent {
-    color: #616161 ;
-
-    
+    color: #616161;
 }
 
 .profileName {
@@ -53,4 +46,4 @@
 .data {
     font-weight: bold;
     color: black;
-} 
+}

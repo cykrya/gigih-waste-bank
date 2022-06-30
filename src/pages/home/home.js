@@ -38,7 +38,7 @@ function Home() {
     ]
 
 return (
-    <div className="home">
+    <div className="page home">
         <div className="education-slider">
         <Carousel className="main-slide" showThumbs={false}
         autoPlay
