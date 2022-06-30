@@ -3,3 +3,9 @@
     height: 100%;
     max-width: 240px;
 }
+
+.sidepanelL-img {
+    opacity: 0.4;
+    height: 100%;
+    max-width: 300px;
+}

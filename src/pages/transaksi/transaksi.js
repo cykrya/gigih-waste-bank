@@ -5,8 +5,8 @@ import Popup from "reactjs-popup";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import { Link } from "react-router-dom";
 
-import RightPanel from "../../components/PagePanel/rightpanel";
-import LeftPanel from "../../components/PagePanel/leftpanel";
+import RightPanelL from "../../components/PagePanel/rightpanelL";
+import LeftPanelL from "../../components/PagePanel/leftpanelL";
 
 export default function Transaksi() {
   const pointInformation = [
@@ -67,7 +67,7 @@ export default function Transaksi() {
 
   return (
     <div className="transaction">
-      <LeftPanel/>
+      <LeftPanelL/>
       <div className="transaction-contents">
         <div className="contents-title">
           <h1>Transaksi</h1>
@@ -106,7 +106,7 @@ export default function Transaksi() {
           </Popup>
         </div>
       </div>
-      <RightPanel/>
+      <RightPanelL/>
     </div>
   );
 }

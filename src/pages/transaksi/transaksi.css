@@ -25,14 +25,14 @@
     margin-top: 102px;
     background: #EBEBEB;
     text-align: center;
-    display: inline-block;  
+    display: inline-block;
 }
 
 .history-logo {
     margin-top: 102px;
     background: #EBEBEB;
     color: black;
-    float: right; 
+    float: right;
     position: absolute;
 }
 
@@ -44,12 +44,12 @@
     padding: 14px;
     background-color: white;
     margin: 0 auto;
-    margin-top: 50px; 
+    margin-top: 50px;
 }
 
 .point-information {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     text-align: center;
 }
 
