@@ -12,19 +12,19 @@ function Home() {
         {
             id:1,
             title:"Pengertian dan Perbedaan Sampah Organik dan Anorganik",
-            link:"/edukasi",
+            link:"/Aone",
             img:"https://img.freepik.com/free-photo/dump-rubbish_140289-64.jpg?w=2000"
         },
         {
             id:2,
             title:"Jenis-Jenis Sampah Organik dan Anorganik",
-            link:"/edukasi",
+            link:"/Atwo",
             img:"https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
         },
         {
             id:3,
             title:"Cara Mengolah Sampah Organik Bekas menjadi Pupuk",
-            link:"/edukasi",
+            link:"/Athree",
             img:"https://img.freepik.com/free-vector/organic-waste-recycling-process-compost_100147-81.jpg"
         },
     ];
