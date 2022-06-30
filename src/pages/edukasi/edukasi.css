@@ -1,0 +1,59 @@
+.sub-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.edukasi-wrapper {
+    width: 70%;
+    display: grid;
+}
+
+.content {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    background-color: #EBEDF2;
+    height: 300px;
+    border-bottom: 4px solid #bfc1c6;
+}
+
+.icon {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-right: 15px;
+}
+
+.h1-edukasi {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.isi {
+    margin-left: 15px;
+    font-size: 18px;
+    padding: 0px 15px;
+    text-align: justify;
+}
+
+.moredetails {
+    margin-top: 15px;
+    margin-right: 25px;
+    float: right;
+    font-size: 12px;
+}
+
+.c33 {
+    margin-bottom: 15px;
+}
+
+
+/* .content {
+    width: 100%;
+    margin: auto;
+    display: flex;
+} */

@@ -12,8 +12,9 @@ import HomeIcon from '@mui/icons-material/Home';
 
 import { useSelector, useDispatch } from 'react-redux';
 import {email, password,nama,umur,alamat,jeniskel,hadLogin} from '../../components/core/slice';
-//import CheckData from "./alert";
 
+import RegisterSuccess from "./alerts/RegisterSuccess";
+import RegisterFailed from "./alerts/RegisterFailed";
 const theme = createTheme({
   palette: {
     primary: {
@@ -49,7 +50,37 @@ const Gender = [
   const [profage, setprofAge] = useState("");
   const [profaddress, setprofAddress] = useState("");
   const [profgender, setprofGender] = useState('Pria');
+  const [Open, setOpen] = useState(false);
+  const [Open2, setOpen2] = useState(false);
   const dispatch = useDispatch()
+  
+  const test1=((useSelector((state)=>state.profile)).email);
+  const test2=((useSelector((state)=>state.profile)).password);
+  const test3=((useSelector((state)=>state.profile)).nama);
+  const test4=((useSelector((state)=>state.profile)).umur);
+  const test5=((useSelector((state)=>state.profile)).alamat);
+  const test6=((useSelector((state)=>state.profile)).jeniskel);
+  
+  useEffect (()=>{
+    console.log("nama akun: "+test1);
+    console.log("nama password: "+test2);
+    console.log("nama user: "+test3);
+    console.log("umur: "+test4);
+    console.log("nama alamat: "+test5);
+    console.log("jenis kelamin: "+test6);
+  },[test1]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setOpen(false);
+    }, 3000);
+  }, [Open]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setOpen2(false);
+    }, 3000);
+  }, [Open2]);
 
   const InsertProfileData = (e) => {
     e.preventDefault();
@@ -66,29 +97,23 @@ const Gender = [
     dispatch(umur(profage));
     dispatch(alamat(profaddress));
     dispatch(jeniskel(profgender));
-    dispatch(hadLogin(true));
+
+    if ((profemail.length>1) & (profpassword.length>1)& (profname.length>1) & (profaddress.length>1)){
+      console.log("userdata ada");
+      setOpen(true);
+      dispatch(hadLogin(true));
+      return{
+
+      }
+    }
+      setOpen2(true);
+      console.log("user data tidak ditemukan");
   };
-
-  const test1=((useSelector((state)=>state.profile)).email);
-  const test2=((useSelector((state)=>state.profile)).password);
-  const test3=((useSelector((state)=>state.profile)).nama);
-  const test4=((useSelector((state)=>state.profile)).umur);
-  const test5=((useSelector((state)=>state.profile)).alamat);
-  const test6=((useSelector((state)=>state.profile)).jeniskel);
-  
-  useEffect (()=>{
-    console.log("nama akun: "+test1);
-    console.log("nama password: "+test2);
-    console.log("nama user: "+test3);
-    console.log("umur: "+test4);
-    console.log("nama alamat: "+test5);
-    console.log("jenis kelamin: "+test6);
-  });
-
-
     return (
       <ThemeProvider theme={theme}>
         <div className="page register">
+        <RegisterSuccess Open={Open}/>
+        <RegisterFailed Open2={Open2}/>
           <div className="registerWrapper"> 
             <form onSubmit={InsertProfileData} className="playlistForm">
               <FormControl className="ssearch">
