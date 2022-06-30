@@ -10,7 +10,7 @@ import Home from './pages/home/home';
 import Login from './pages/loginregis/login';
 import Register from './pages/loginregis/register';
 import Transaksi from './pages/transaksi/transaksi';
-import Edukasi from './pages/edukasi/Edukasi';
+import Edukasi from './pages/edukasi/edukasi';
 import PenukaranPoin from './pages/penukaranpoin/penukaranpoin';
 import HistoriPoin from './pages/penukaranpoin/historipoin';
 import Histori from './pages/histori/histori';
@@ -78,6 +78,9 @@ export default function App() {
             <Route exact path="/penukaranpoin" element={<Login />} />
             <Route exact path="/histori" element={<Login />} />
             <Route exact path="/profile" element={<Login />} />
+            <Route exact path="/Aone" element={<A1/>} />
+            <Route exact path="/Atwo" element={<A2/>} />
+            <Route exact path="/Athree" element={<A3/>} />
        </Routes>
      </div>
    </Router>
