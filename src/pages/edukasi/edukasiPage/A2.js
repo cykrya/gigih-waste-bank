@@ -2,7 +2,7 @@ import "./article.css";
 
 export default function A2() {
     return (
-      <div className="page A2">
+      <div className="page-edukasi edukasi-container">
       <div className="A-Wrapper">
         <h1 className="A-title">Jenis - Jenis Sampah Organik dan Anorganik</h1>
         <img src='/img/c2.png' alt="jpg" className='icon c2'></img>  

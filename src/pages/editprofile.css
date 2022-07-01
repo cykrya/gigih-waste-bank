@@ -1,16 +1,11 @@
 .editWrapper {
     position: relative;
-    
-    width: 530px;
-    height: 499px;
+    width: 784px;
+    height: 100%;
     background-color: #ffffffc1;
     color: black;
     display: inline-block;
     text-align: center;
-
-    
-    
-    
 }
 
 .editprofilePage {
@@ -24,8 +19,6 @@
 .profileHeader {
     background-color: #EEF7F2;
     border-bottom: 1px solid rgb(0, 0, 0);
-
-    
 }
 
 .profileHeader p {
@@ -36,10 +29,11 @@
     padding: 5px;
 }
 
-.page-edit{
+.page-edit {
     background-color: #ffffffc1;
     margin-top: 100px;
 }
+
 .LPanel {
     margin-left: 262px;
 }

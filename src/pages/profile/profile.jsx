@@ -65,14 +65,14 @@ const Profile = () => {
             <ThemeProvider theme={theme1}>
 <Box>
 <Link to="/editprofile">
-<Button  variant= "contained" type="input"  className="button register" sx={{ color: 'white' ,width:150, borderRadius: '25px' , mt: 0}}>Edit Akun</Button>
+<Button  variant= "contained" type="input"  className="button Eprofile" sx={{ color: 'white' ,width:150, borderRadius: '25px' , mt: 6}}>Edit Akun</Button>
           </Link>
          
 </Box></ThemeProvider>
 
 
 <ThemeProvider theme={theme2}>
-<Button href="/login" variant="contained" type="input"  className="button register" sx={{ color: 'white' ,width:150, borderRadius: '25px', mt: 1}}>Keluar</Button></ThemeProvider>
+<Button href="/login" variant="contained" type="input"  className="button Logout" sx={{ color: 'white' ,width:150, borderRadius: '25px', mt: 1}}>Keluar</Button></ThemeProvider>
 
             </div>
         </div>

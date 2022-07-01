@@ -24,7 +24,7 @@ export default function Header() {
           <Link to="/">
             <img src="/gwblogo.png" alt="Logo" />
           </Link>
-          <div className="navigation login">
+          <div className="navigation Nlogin">
             <Link to="/profile">   
               <p className="profileName">
                 <span><AccountCircleIcon  sx={{  color: 'grey',fontSize: 40, }}/></span>

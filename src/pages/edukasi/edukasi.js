@@ -9,7 +9,7 @@ import LeftPanel from "../../components/PagePanel/leftpanel";
 export default function Edukasi() {
 
   return (
-    <div className="page sub-container">
+    <div className="page-edukasi edukasi-container">
       <LeftPanel />
       <div className="edukasi-wrapper">
 

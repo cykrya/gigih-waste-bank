@@ -1,8 +1,16 @@
-.sub-container {
-    width: 100%;
-    height: 100%;
+.edukasi-container {
+    /* width: 100%; */
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.page-edukasi {
+    margin-top: 100px;
+    width: 1256.95px;
+    height: 100%;
+    background-color: #EEF7F2;
+    margin-left: 262.25px;
 }
 
 .edukasi-wrapper {
@@ -48,10 +56,15 @@
 
 .content-details {
     margin-top: 20px;
+    display: block;
 }
 
 .c33 {
     margin-bottom: 15px;
+}
+
+.A-Wrapper {
+    width: 1256.95px;
 }
 
 

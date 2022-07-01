@@ -115,8 +115,8 @@ const Gender = [
         <RegisterSuccess Open={Open}/>
         <RegisterFailed Open2={Open2}/>
           <div className="registerWrapper"> 
-            <form onSubmit={InsertProfileData} className="playlistForm">
-              <FormControl className="ssearch">
+            <form onSubmit={InsertProfileData} className="RegisterForm">
+              <FormControl className="RegisterData">
                 <Box mt={0.5} sx={{m:1, pt:3} }>
                   <IconTextField onChange={(e) => setprofEmail(e.target.value)}
                     label="Email"
@@ -196,7 +196,7 @@ const Gender = [
 
                 <Box mt={0.5} sx={{mt:3,mb:0.3}}>
                   {/* <Link to="/home"> */}
-                    <Button variant="contained" type="input"  className="button register" sx={{ color: 'white' ,width:150, borderRadius: '25px'}}>Masuk</Button>
+                    <Button variant="contained" type="input"  className="button Bregister" sx={{ color: 'white' ,width:150, borderRadius: '25px'}}>Masuk</Button>
                   {/* </Link> */}
                 </Box>
                 
