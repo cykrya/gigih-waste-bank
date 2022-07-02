@@ -98,7 +98,7 @@ const Gender = [
 
 
     return (
-      <div className="editprofilePage">
+      <div className="page editprofilePage">
         <div className="LPanel">
           <LeftPanel/></div>
       <ThemeProvider theme={theme}>

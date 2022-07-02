@@ -1,5 +1,5 @@
 .edukasi-container {
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -7,7 +7,7 @@
 
 .page-edukasi {
     margin-top: 100px;
-    width: 1256.95px;
+    width: 100%;
     height: 100%;
     background-color: #EEF7F2;
     margin-left: 262.25px;
@@ -42,13 +42,12 @@
 
 .isi {
     margin-left: 15px;
-    font-size: 2wv;
+    font-size: 16px;
     padding: 0px 15px;
     text-align: justify;
 }
 
 .moredetails {
-    margin-top: 10px;
     margin-right: 25px;
     float: right;
     font-size: 12px;
@@ -64,7 +63,7 @@
 }
 
 .A-Wrapper {
-    width: 1256.95px;
+    /* width: 1256.95px; */
 }
 
 

@@ -14,7 +14,7 @@ export default function Histori() {
   useEffect(() => {
     const getData = async () => {
       try {
-        const res = await fetch("http://localhost:1337/api/transactions?populate=*&filters[user_id][id]=2").then(
+        const res = await fetch("https://gwb-api.herokuapp.com/api/transactions?populate=*&filters[user_id][id]=5").then(
           (response) => response.json()
         );
         setData(res.data);
@@ -46,6 +46,7 @@ export default function Histori() {
               <InboxIcon sx={{ fontSize: 60 }} style={{ fill: "#797D87" }} />
               <Box mt={0.5} sx={{ mt: 3, mb: 0.3 }}>
                 <Button
+                  href="/transaksi"
                   variant="contained"
                   type="input"
                   className="button setor"
