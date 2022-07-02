@@ -2,6 +2,7 @@
     text-align: center;
     height: 100%;
     margin: 0;
+    /* height: 100vh; */
 }
 
 .App-logo {
@@ -41,6 +42,7 @@
 
 .main-container {
     display: flex;
+    min-height: 100vh;
 }
 
 a {
@@ -50,7 +52,7 @@ a {
 .page {
     margin-top: 100px;
     width: 100%;
-    height: 85vh;
+    /* height: 85vh; */
     background-color: #EEF7F2;
     margin-left: 262.25px;
 }

@@ -14,7 +14,7 @@ export default function PenukaranPoin() {
   useEffect(() => {
     const getData = async () => {
       try {
-        const res = await fetch("http://localhost:1337/api/shops?populate=*").then(
+        const res = await fetch("https://gwb-api.herokuapp.com/api/shops?populate=*").then(
           (response) => response.json()
         );
         setData(res.data);
@@ -46,7 +46,7 @@ console.log(data);
 
               const postData = async () => {
                 const res = await fetch(
-                  `http://localhost:1337/api/points`,
+                  `https://gwb-api.herokuapp.com/api/points`,
                   {
                     method: "POST",
                     headers: {
@@ -66,7 +66,7 @@ console.log(data);
 
               return(
             <div className="RedeemWrapper">
-              <img className="uangtunai" src={`http://localhost:1337${item.attributes.item_image.data.attributes.url}`} alt="Logo" />
+              <img className="uangtunai" src={`https://gwb-api.herokuapp.com${item.attributes.item_image.data.attributes.url}`} alt="Logo" />
               <p>{item.attributes.item_type}</p>
               <p>{item.attributes.price}</p>
               <button onClick={postData} className="reedem-button">Tukar Poin</button>
