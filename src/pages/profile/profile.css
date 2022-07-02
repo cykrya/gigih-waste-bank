@@ -1,7 +1,7 @@
 .profileWrapper {
     position: relative;
     margin-top: 102px;
-    width: 785px;
+    width: 530px;
     height: 499px;
     background-color: #ffffffc1;
     color: black;
@@ -41,8 +41,7 @@
 
 .profileData {
     text-align: left;
-    padding: 0px 0px 0px 310px;
-    padding-top: 20px;
+    padding-left: 120px;
     font-size: smaller;
 }
 
