@@ -1,8 +1,9 @@
 import "./profile.css"
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { Button,createTheme,ThemeProvider,Box} from "@mui/material";
-import { useSelector} from 'react-redux';
+import { useSelector, useDispatch} from 'react-redux';
 import { Link } from "react-router-dom";
+import { hadLogin } from "../../components/core/slice";
 
 
 const theme1 = createTheme({
@@ -32,7 +33,10 @@ const theme1 = createTheme({
 
 
 const Profile = () => {
-  
+  const dispatch = useDispatch()
+  const Logout = () => {
+    dispatch(hadLogin(false));
+  }
   const test1=((useSelector((state)=>state.profile)).email);
   const test3=((useSelector((state)=>state.profile)).nama);
   const test4=((useSelector((state)=>state.profile)).umur);
@@ -68,7 +72,7 @@ const Profile = () => {
 
 
 <ThemeProvider theme={theme2}>
-<Button href="/login" variant="contained" type="input"  className="button register" sx={{ color: 'white' ,width:150, borderRadius: '25px', mt: 1}}>Keluar</Button></ThemeProvider>
+<Button href="/login" onClick={Logout} variant="contained" type="input"  className="button register" sx={{ color: 'white' ,width:150, borderRadius: '25px', mt: 1}}>Keluar</Button></ThemeProvider>
 
             </div>
         </div>
