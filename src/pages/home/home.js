@@ -3,8 +3,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import "./home.css";
 import { Link } from "react-router-dom";
-import  { useEffect, useState } from "react";
-import { useSelector, useDispatch } from 'react-redux';
 
 
 function Home() {
@@ -38,7 +36,7 @@ function Home() {
     ]
 
 return (
-    <div className="page home">
+    <div className="home">
         <div className="education-slider">
         <Carousel className="main-slide" showThumbs={false}
         autoPlay
@@ -48,7 +46,7 @@ return (
         {
             education.map( e =>
                 <div>
-                    <img src={e.img} width="671px" height="352px" />
+                    <img src={e.img} width="671px" height="352px" alt="education" />
                     <Link to={e.link}>
                     <p className="caption">{e.title}</p>
                     </Link>
