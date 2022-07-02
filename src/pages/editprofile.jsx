@@ -55,7 +55,6 @@ const Gender = [
   const [profaddress, setprofAddress] = useState("");
   const [profgender, setprofGender] = useState('Pria');
   const dispatch = useDispatch()
-  dispatch(hadLogin(true));
     
   const InsertProfileData = (e) => {
     e.preventDefault();
