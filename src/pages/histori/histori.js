@@ -48,7 +48,7 @@ export default function Histori() {
                 <Button
                   variant="contained"
                   type="input"
-                  className="button register"
+                  className="button setor"
                   sx={{ color: "white", width: 150, borderRadius: "25px" }}
                 >
                   Setor

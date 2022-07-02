@@ -12,6 +12,8 @@ import HomeIcon from '@mui/icons-material/Home';
 
 import { useSelector, useDispatch } from 'react-redux';
 import {email, password,nama,umur,alamat,jeniskel,hadLogin} from '../components/core/slice'
+import RightPanel from "../components/PagePanel/rightpanel";
+import LeftPanel from "../components/PagePanel/leftpanel"; 
 
 
 
@@ -97,13 +99,15 @@ const Gender = [
 
     return (
       <div className="editprofilePage">
+        <div className="LPanel">
+          <LeftPanel/></div>
       <ThemeProvider theme={theme}>
         <div className="page-edit">
           <div className="editWrapper"> 
             <div className="profileHeader"><p className="headerName">Profil</p></div>
             <div className="profileContent">
-              <form onSubmit={InsertProfileData} className="playlistForm">
-              <FormControl className="ssearch">
+              <form onSubmit={InsertProfileData} className="RegisterForm">
+              <FormControl className="RegisterData">
                 <Box mt={0.5} sx={{m:1, pt:3} }>
                   <IconTextField onChange={(e) => setprofEmailPhone(e.target.value)}
                     label="Email"
@@ -188,7 +192,7 @@ const Gender = [
 
                 <Box mt={0.5} sx={{mt:3,mb:0.3}}>
                   {/* <Link to="/home"> */}
-                    <Button variant="contained" type="input"  className="button register" sx={{ color: 'white' ,width:150, borderRadius: '25px'}}>Simpan</Button>
+                    <Button variant="contained" type="input"  className="button Eprofile" sx={{ color: 'white' ,width:150, borderRadius: '25px'}}>Simpan</Button>
                   {/* </Link> */}
                 </Box>
                 
@@ -199,6 +203,7 @@ const Gender = [
           </div>
         </div>
       </ThemeProvider>
+      <RightPanel/>
       </div>
     );
   }

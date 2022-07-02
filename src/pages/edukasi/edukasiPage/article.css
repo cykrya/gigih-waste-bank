@@ -1,0 +1,24 @@
+    .A1 {
+        margin-top: 80px;
+    }
+    
+    .A-Wrapper {
+        margin: 0px 100px;
+        padding: 0px 50px;
+        height: 100%;
+        /* background-color: #fff; */
+    }
+    
+    .A-title {
+        margin-bottom: 40px;
+    }
+    
+    .A-content {
+        margin-top: 280px;
+        padding-bottom: 20px;
+        text-align: justify;
+    }
+    
+    .page {
+        height: 100%;
+    }

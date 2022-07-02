@@ -6,12 +6,13 @@ import KeyIcon from '@mui/icons-material/Key';
 import { Link } from "react-router-dom";
 // import store from "../../components/core/store";
 import axios from "axios";
-import { useState,useEffect } from "react";
+import { useState,useEffect,useCallback } from "react";
 import { useSelector, useDispatch } from 'react-redux';
+import {useNavigate} from 'react-router-dom';
 import Home from "../home/home";
 import Register from "./register"
-import LoginSuccess from "./LoginSuccess";
-import LoginFailed from "./LoginFailed";
+import LoginSuccess from "./alerts/LoginSuccess";
+import LoginFailed from "./alerts/LoginFailed";
 import {hadLogin} from '../../components/core/slice';
 
 const theme = createTheme({
@@ -26,8 +27,6 @@ const theme = createTheme({
   },
 });
 
-
-
 const Login = () => {
   const [logEmail, setLogEmail] = useState("");
   const [logPassword, setLogPassword] = useState("");
@@ -36,8 +35,6 @@ const Login = () => {
   const [Open, setOpen] = useState(false);
   const [Open2, setOpen2] = useState(false);
   const dispatch = useDispatch()
-
-
 
   useEffect(() => {
     setTimeout(() => {
@@ -51,10 +48,12 @@ const Login = () => {
     }, 3000);
   }, [Open2]);
 
+  const navigate = useNavigate();
+  const nav = useCallback(() => navigate('/', {replace: true}), [navigate]);
+
   const get = (e) => {
     e.preventDefault();
     console.log("checking data");
- 
     console.log("logEmail:" + logEmail);
     console.log("loginEmail:" + loginEmail);
     console.log("logPassword:" + logPassword);
@@ -63,6 +62,7 @@ const Login = () => {
       console.log("userdata ada");
       setOpen(true);
       dispatch(hadLogin(true));
+      nav();
       return{
 
       }
@@ -102,9 +102,9 @@ const Login = () => {
                 </Box>
                 {/* <a className= "lupapassword" href={`https://youtu.be/zqNTltOGh5c`}> lupa password?</a> */}
                 <Box mt={0.5} sx={{mt:3,mb:0.3}}>
-                  {/* <Link to="/"> */}
+  
                     <Button variant="contained" type="input"  className="login-button" sx={{ color: 'white' ,width:150, borderRadius: '25px'}}>Masuk</Button>
-                  {/* </Link> */}
+                  {/* button href="/" it made the form doesnt works tho...*/}
                 </Box>
                 <Link to="/register">
                   <a className= "noakun">belum punya akun?</a>

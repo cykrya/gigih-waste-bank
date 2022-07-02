@@ -3,6 +3,8 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { Button,createTheme,ThemeProvider,Box} from "@mui/material";
 import { useSelector, useDispatch} from 'react-redux';
 import { Link } from "react-router-dom";
+import RightPanel from "../../components/PagePanel/rightpanel";
+import LeftPanel from "../../components/PagePanel/leftpanel"; 
 import { hadLogin } from "../../components/core/slice";
 
 
@@ -46,6 +48,8 @@ const Profile = () => {
 
     return (
       <div className="profilePage">
+        <div className="LPanel">
+          <LeftPanel/></div>
         <div className="profileWrapper">
           <div className="profileHeader"><p className="headerName">Profil</p>
           </div>
@@ -65,17 +69,19 @@ const Profile = () => {
             <ThemeProvider theme={theme1}>
 <Box>
 <Link to="/editprofile">
-<Button  variant= "contained" type="input"  className="button register" sx={{ color: 'white' ,width:150, borderRadius: '25px' , mt: 0}}>Edit Akun</Button>
+<Button  variant= "contained" type="input"  className="button Eprofile" sx={{ color: 'white' ,width:150, borderRadius: '25px' , mt: 6}}>Edit Akun</Button>
           </Link>
          
 </Box></ThemeProvider>
 
 
 <ThemeProvider theme={theme2}>
-<Button href="/login" onClick={Logout} variant="contained" type="input"  className="button register" sx={{ color: 'white' ,width:150, borderRadius: '25px', mt: 1}}>Keluar</Button></ThemeProvider>
+<Button href="/login" onClick={Logout} variant="contained" type="input"  className="button Logout" sx={{ color: 'white' ,width:150, borderRadius: '25px', mt: 1}}>Keluar</Button></ThemeProvider>
 
             </div>
         </div>
+        <RightPanel/>
+        
      </div>
     );
   }

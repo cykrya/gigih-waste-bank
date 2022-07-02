@@ -1,28 +1,24 @@
 .profileWrapper {
     position: relative;
     margin-top: 102px;
-    width: 500px;
+    width: 785px;
     height: 499px;
     background-color: #ffffffc1;
     color: black;
     display: inline-block;
     text-align: center;
-    margin-left: 250px;
-
-    
-    
-    
 }
 
-/* .profilePage {
-    background-image: url("./image/plastic-3491137.jpg");
-} */
+.profilePage {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .profileHeader {
     background-color: #EEF7F2;
     border-bottom: 1px solid rgb(0, 0, 0);
-
-    
 }
 
 .profileHeader p {
@@ -34,23 +30,27 @@
 }
 
 .profileContent {
-    color: #616161 ;
-
-    
+    color: #616161;
 }
 
 .profileName {
     color: #64CF2E;
     margin-top: 0;
+    text-align: center;
 }
 
 .profileData {
     text-align: left;
-    padding-left: 120px;
+    padding: 0px 0px 0px 310px;
+    padding-top: 20px;
     font-size: smaller;
 }
 
 .data {
     font-weight: bold;
     color: black;
-} 
+}
+
+.LPanel {
+    margin-left: 262px;
+}
