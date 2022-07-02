@@ -1,13 +1,17 @@
 import "./article.css";
-
+import data from "./data.json";
 export default function A3() {
+  const title= data[2].title;
+  const paragraph= data[2].paragraphs;
+  const img= data[0].img;
     return (
       <div className="page-edukasi edukasi-container">
       <div className="A-Wrapper">
-        <h1 className="A-title">Kelebihan dan cara membuat Pupuk Organik Cair</h1>
-        <img src='/img/c2.png' alt="jpg" className='icon c2'></img>  
+        <h1 className="A-title">{title}</h1>
+        <img src={img} alt="jpg" className='icon c2'></img>  
         <article className="A-content">
-        <h2>Kelebihan dari Pupuk Organik Cair</h2>
+        <div dangerouslySetInnerHTML={{ __html: paragraph}}/>
+        {/* <h2>Kelebihan dari Pupuk Organik Cair</h2>
           <ul>
             <li>umumnya tidak menyebabkan tanah dan tanaman menjadi rusak walaupun digunakan sesering mungkin. </li>
             <li>mengandung Giberelin atau asam giberelat (GA), yaitu hormon perangsang pertumbuhan tanaman untuk memicu munculnya 
@@ -19,13 +23,6 @@ export default function A3() {
           organisme penyakit.</li>
             <li>ramah lingkungan, gampang didapat, dan ramah kantong  dibanding dengan harga pupuk anorganik yang semakin melangit.</li>
           </ul>
-          
-
-          
-
-          
-
-          
 
           <h2>Tahap membuat Pupuk Organik Cair:</h2>
           <ul>
@@ -40,15 +37,6 @@ export default function A3() {
             sendiri. Kalau anda ingin membuat sendiri berikut ini panduannya. </li>
           </ul>
           
-          
-          
-          
-          
-          
-          
-          
-          
-
           <h2>Cara mudah membuat EM4 sederhana:</h2>
           <ul>
             <li>
@@ -63,7 +51,7 @@ export default function A3() {
           menyusut berarti pembuatan pupuk organik cair anda berhasil. Angkat sampah dalam kantong plastik dan tiriskan. Anda 
           akan mendapatkan 2 hal, sampah dari dalam plastik menjadi pupuk padat, sedangkan air dalam tong menjadi pupuk organik 
           cair.</li>
-          </ul>
+          </ul> */}
         </article>
       </div>
     </div>

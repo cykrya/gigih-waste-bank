@@ -1,20 +1,37 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./edukasi.css";
-
+import data from "./edukasiPage/data.json";
+import ShowEdukasi from "./ShowEdukasi";
 import RightPanel from "../../components/PagePanel/rightpanel";
 import LeftPanel from "../../components/PagePanel/leftpanel";
 
 
 export default function Edukasi() {
-
+  // console.log(data[0].preview)
+  var data1="";
   return (
     <div className="page-edukasi edukasi-container">
       <LeftPanel />
       <div className="edukasi-wrapper">
-
-        <div className="EdukasiContent">
-          <h1 className="h1-edukasi">Pengertian Sampah Organik dan Anorganik</h1>
+      {data.map((data) => (
+        // console.log(data.key);
+        data1=data.key,
+            <ShowEdukasi 
+            data={data1}
+            img={data.img}
+            title={data.title}
+            preview={data.preview}
+            
+              />
+            
+            // <ShowEdukasi 
+            //   data={data}
+            //   />
+          ))}
+        {/*<div className="EdukasiContent">
+          
+           <h1 className="h1-edukasi">Pengertian Sampah Organik dan Anorganik</h1>
           <div className="content-details">
             <img src='/img/c1.png' alt="jpg" className='icon c1'></img>  
             <p className="isi c1">Sampah organik adalah bahan bahan yang sudah dibuang dan sudah tidak terpakai
@@ -63,7 +80,7 @@ export default function Edukasi() {
                 <a className= "moredetails c33">Baca Selengkapnya...</a>
               </Link>
           </div>
-        </div>
+        </div> */}
       </div>
       <RightPanel />
     </div>
