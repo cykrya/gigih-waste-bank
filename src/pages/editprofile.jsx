@@ -46,7 +46,7 @@ const Gender = [
 
 
 
-// export default function Register() {
+
   const Editprofile = () => {
   const [profemailPhone, setprofEmailPhone] = useState("");
   const [profpassword, setprofPassword] = useState("");
