@@ -42,13 +42,12 @@
 
 .isi {
     margin-left: 15px;
-    font-size: 2wv;
+    font-size: 16px;
     padding: 0px 15px;
     text-align: justify;
 }
 
 .moredetails {
-    margin-top: 10px;
     margin-right: 25px;
     float: right;
     font-size: 12px;
