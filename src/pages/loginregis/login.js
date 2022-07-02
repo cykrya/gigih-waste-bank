@@ -6,8 +6,9 @@ import KeyIcon from '@mui/icons-material/Key';
 import { Link } from "react-router-dom";
 // import store from "../../components/core/store";
 import axios from "axios";
-import { useState,useEffect } from "react";
+import { useState,useEffect,useCallback } from "react";
 import { useSelector, useDispatch } from 'react-redux';
+import {useNavigate} from 'react-router-dom';
 import Home from "../home/home";
 import Register from "./register"
 import LoginSuccess from "./alerts/LoginSuccess";
@@ -26,8 +27,6 @@ const theme = createTheme({
   },
 });
 
-
-
 const Login = () => {
   const [logEmail, setLogEmail] = useState("");
   const [logPassword, setLogPassword] = useState("");
@@ -36,8 +35,6 @@ const Login = () => {
   const [Open, setOpen] = useState(false);
   const [Open2, setOpen2] = useState(false);
   const dispatch = useDispatch()
-
-
 
   useEffect(() => {
     setTimeout(() => {
@@ -51,10 +48,12 @@ const Login = () => {
     }, 3000);
   }, [Open2]);
 
+  const navigate = useNavigate();
+  const nav = useCallback(() => navigate('/', {replace: true}), [navigate]);
+
   const get = (e) => {
     e.preventDefault();
     console.log("checking data");
- 
     console.log("logEmail:" + logEmail);
     console.log("loginEmail:" + loginEmail);
     console.log("logPassword:" + logPassword);
@@ -63,6 +62,7 @@ const Login = () => {
       console.log("userdata ada");
       setOpen(true);
       dispatch(hadLogin(true));
+      nav();
       return{
 
       }
