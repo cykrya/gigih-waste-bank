@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# Welcome to Gigih Waste Bank! 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Description:
+Gigih Waste Bank is a service that provides benefits to people while educates the public about proper waste sorting. Gigih Waste Bank designed to be one of the solutions for waste problems in Indonesia.
 
-## Available Scripts
+## Gigih Waste Bank's display
 
-In the project directory, you can run:
+Login Menu
+<center><img src="/images/login.png" alt="Preview Image" /></center>
 
-### `npm start`
+Home
+<center><img src="/images/homeal.png" alt="Preview Image" /></center>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<center><img src="/images/homebl.png" alt="Preview Image" /></center>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Education Menu
+<center><img src="/images/education.png" alt="Preview Image" /></center>
 
-### `npm test`
+<center><img src="/images/education(2).png" alt="Preview Image" /></center>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Transaction Menu
+<center><img src="/images/transaksi.png" alt="Preview Image" /></center>
 
-### `npm run build`
+<center><img src="/images/inputtoken.png" alt="Preview Image" /></center>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+History Menu
+<center><img src="/images/history.png" alt="Preview Image" /></center>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 🚪 Login and register menu to user account on Gigih Waste Bank
+- 📚 Education page ➡️ accessible from home and sidebar contains several articles to educate users in differentiating the types of waste
+- 👥 Profile button ➡️ Users can see their profile information and edit their profile
+- 💵 Transaction menu ➡️ include information about how many points users can earn from each kilogram item ➡️ and input token button which used by users to convert the token their get to points
+- 🪙 Points system which earned depends on the weight and type of waste that has been given to the waste bank
+- 🔄 Redeem point ➡️ Users can redeem point they earn to things they want ➡️ contains redeem history when click time logo
+- 🕒 History page ➡️ Users can find out the history of the waste exchange transactions to the points they have done
+- 🏃‍♀‍ Logout from Gigih Waste Bank account
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Tutorial to instal Gigih Waste Bank:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the project from git
+  ```bash
+     git clone https://github.com/cykrya/gigih-waste-bank
+  ```
+2. Go to the project directory on command menu
+  ```bash
+     cd gigih-waste-bank
+  ```
+3. Install dependencies
+  ```bash
+     npm install
+  ```
+4. Set up the environment variables
+```bash
+    write
+    `HOST=
+    PORT=
+    APP_KEYS=
+    API_TOKEN_SALT=
+    ADMIN_JWT_SECRET=`
+    which contains your Client ID from strapi
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. Start the server to open
+  ```bash
+     npm start
+  ```
+6. `http://localhost:3000` will be opened on your browser and its contains result
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Testing
 
-## Learn More
+Run `npm test` for launches the test runner in the interactive watch mode.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Additional Info
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Purpose
+This project made as a solution from us to help solve the problem of waste in Indonesia.
+This project also made for our capstone project on Generasi Gigih 2.0
 
-### Code Splitting
+### Installation needed
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+-   React-redux
+-   React-router-dom
+-   React-responsive-carousel
+-   Reactjs-popup
+-   Eslint
+-   Typescript   
+-   Material-UI
 
-### Analyzing the Bundle Size
+### Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project made by FE_WA10 from Generasi Gigih 2.0
 
-### Making a Progressive Web App
+### Credit
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Credit to :
+- Generasi GIGIH 2.0
+- Our capstone project mentor (Tommy Fernandez Quiko)
+- Our Instructor
+- Our Class Assistant
+- Our team
+- Vscode
+- Github
+- Vercel
+- Our team
+- Our precious friends which help us
 
-### Advanced Configuration
+## Feedback
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any feedback, you can create issue(s) here [https://github.com/cykrya/gigih-waste-bank/issues]

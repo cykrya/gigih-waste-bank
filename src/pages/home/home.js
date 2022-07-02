@@ -46,7 +46,7 @@ return (
         {
             education.map( e =>
                 <div>
-                    <img src={e.img} width="671px" height="352px" alt="education" />
+                    <img src={e.img} width="671px" height="352px" alt="education"/>
                     <Link to={e.link}>
                     <p className="caption">{e.title}</p>
                     </Link>
