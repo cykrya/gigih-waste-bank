@@ -1,28 +1,34 @@
 .sub-container {
-width: 100%;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
 .content {
     width: 720px;
 }
+
 .content-wrapper {
     width: 100%;
     margin: auto;
     display: flex;
 }
+
 .title {
     justify-content: space-between;
 }
+
 .indikator-wrapper {
     display: flex;
 }
+
 .trash-amount {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .no-contain {
     margin-top: 250px;
     display: flex;
