@@ -29,7 +29,7 @@ console.log(data);
 
   return (
     <div className="page sub-container">
-      <LeftPanel />
+      <div className="PLPanel"><LeftPanel /></div>
       <div className="content-wrap">
         <div className="title-wrapper">
           <h1>Redeem Point</h1>
