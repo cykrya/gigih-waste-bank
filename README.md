@@ -5,34 +5,42 @@ Gigih Waste Bank is a service that provides benefits to people while educates th
 
 ## Gigih Waste Bank's display
 
-Login Menu
+#### Login Menu
 <center><img src="/images/login.png" alt="Preview Image" /></center>
 
-Home
-<center><img src="/images/homeal.png" alt="Preview Image" /></center>
-
+#### Home
 <center><img src="/images/homebl.png" alt="Preview Image" /></center>
 
-Education Menu
+<center><img src="/images/homeal.png" alt="Preview Image" /></center>
+
+#### Education Menu
 <center><img src="/images/education.png" alt="Preview Image" /></center>
 
 <center><img src="/images/education(2).png" alt="Preview Image" /></center>
 
-Transaction Menu
+#### Transaction Menu
 <center><img src="/images/transaction.png" alt="Preview Image" /></center>
 
 <center><img src="/images/inputtoken.png" alt="Preview Image" /></center>
 
-History Menu
+#### Redeem Point Menu
+<center><img src="/images/redeemhistory.png" alt="Preview Image" /></center>
+
+#### History Menu
 <center><img src="/images/history.png" alt="Preview Image" /></center>
+
+#### Profile and Edit Profile
+<center><img src="/images/profile.png" alt="Preview Image" /></center>
+
+<center><img src="/images/editprofile.png" alt="Preview Image" /></center>
 
 ## Features
 
 - 🚪 Login and register menu to user account on Gigih Waste Bank
-- 📚 Education page : accessible from home and sidebar contains several articles to educate users in differentiating the types of waste
+- 📚 Education page : accessible from home and sidebar, contains several articles to educate users in differentiating the types of waste
 - 👥 Profile button : Users can see their profile information and edit their profile
 - 💵 Transaction menu : include information about how many points users can earn from each kilogram item and input token button which used by users to convert the token their get to points
-- 💎Points system which earned depends on the weight and type of waste that has been given to the waste bank
+- 💎Points system : earned depends on the weight and type of waste that has been given to the waste bank
 - 🔄 Redeem point : Users can redeem point they earn to things they want, contains redeem history when click time logo
 - 🕒 History page : Users can find out the history of the waste exchange transactions to the points they have done
 - 🏃‍♀‍ Logout from Gigih Waste Bank account
@@ -54,15 +62,10 @@ Tutorial to instal Gigih Waste Bank:
      npm install
   ```
 4. Set up the environment variables
-    write
   ```bash
-    `HOST=
-    PORT=
-    APP_KEYS=
-    API_TOKEN_SALT=
-    ADMIN_JWT_SECRET=`
+    
   ```
-    which contains your Client ID from strapi
+    write the code above on environment, which contains your Client ID
 5. Start the server to open
   ```bash
      npm start
