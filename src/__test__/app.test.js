@@ -2,11 +2,9 @@ import { render,screen } from "@testing-library/react";
 import App from "../App";
 import configureStore from 'redux-mock-store'
 import userEvent from '@testing-library/user-event';
-import Login from "../pages/loginregis/login";
+
 import { Provider } from 'react-redux'
-import Edukasi from "../pages/edukasi/edukasi";
-import { Router, Routes } from "react-router-dom";
-import AppWrapper from "../AppWrapper";
+
 
 describe('testing the app launch', () => {
     const initialData = {profile: {
