@@ -55,7 +55,7 @@ export default function Transaksi() {
         .catch((err) => alert(err.message));
       setPending(false);
     } else {
-      alert("kode udah diredeem");
+      alert("kode sudah diredeem");
       setPending(false);
     }}catch(err){
       alert("Kode tidak tersedia");
