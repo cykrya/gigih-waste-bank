@@ -107,7 +107,7 @@ const Login = () => {
                   {/* button href="/" it made the form doesnt works tho...*/}
                 </Box>
                 <Link to="/register">
-                  <a className= "noakun">belum punya akun?</a>
+                  <p className= "noakun">belum punya akun?</p>
                 </Link>
               </FormControl>
               </form>
