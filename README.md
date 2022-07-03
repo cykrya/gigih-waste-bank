@@ -104,11 +104,10 @@ Credit to :
 - Our capstone project mentor (Tommy Fernandez Quiko)
 - Our Instructor
 - Our Class Assistant
-- Our team
+- Our Team Member
 - Vscode
 - Github
 - Vercel
-- Our team
 - Our precious friends which help us
 
 ## Feedback
