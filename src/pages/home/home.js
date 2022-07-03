@@ -21,7 +21,7 @@ function Home() {
         },
         {
             id:3,
-            title:"Cara Mengolah Sampah Organik Bekas menjadi Pupuk",
+            title:"Kelebihan & cara membuat Pupuk Organik cair",
             link:"/Athree",
             img:"https://img.freepik.com/free-vector/organic-waste-recycling-process-compost_100147-81.jpg"
         },
