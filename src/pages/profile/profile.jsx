@@ -56,16 +56,18 @@ const Profile = () => {
           <div className="profileContent">
             <AccountCircleIcon sx={{ fontSize: 55 ,pt:3  }}/>
             <p className="profileName">{test3}</p>
-            <div className="profileData">
-              <p>Email</p>
-              <p className="data">{test1}</p>
-              <p>Umur</p>
-              <p className="data">{test4}</p>
-              <p>Jenis Kelamin</p>
-              <p className="data">{test6}</p>
-              <p>Alamat</p>
-              <p className="data">{test5}</p>
+            <div className="profileDataWrapper">
+              <div className="profileData">
+                <p>Email</p>
+                <p className="data">{test1}</p>
+                <p>Umur</p>
+                <p className="data">{test4}</p>
+                <p>Jenis Kelamin</p>
+                <p className="data">{test6}</p>
+                <p>Alamat</p>
+                <p className="data">{test5}</p>
               </div>
+            </div>
             <ThemeProvider theme={theme1}>
 <Box>
 <Link to="/editprofile">

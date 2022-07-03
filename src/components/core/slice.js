@@ -2,21 +2,9 @@ import { createSlice } from '@reduxjs/toolkit'
 
 export const profileSlice = createSlice(
   {
-    // name: 'profiledata',
-    // initialState: {
-    //   emailLog:'johndoe@gmail.com',
-    //   passwordLog:'john12345',
-    //   email:'',
-    //   password:'',
-    //   nama:'',
-    //   umur:'',
-    //   alamat:'',
-    //   jeniskel:'',
-    //   hadLogin:false,
+   
     name: 'profiledata',
     initialState: {
-      // emailLog:'johndoe@gmail.com',
-      // passwordLog:'john12345',
       email:'johndoe@gmail.com',
       password:'john12345',
       nama:'John Doe',

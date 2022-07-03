@@ -28,7 +28,7 @@ export default function Histori() {
   console.log(data);
   return (
     <div className="page sub-container">
-      <LeftPanel />
+     <div className="HLPanel"><LeftPanel /></div>
       <div className="content">
         <div className="title content-wrapper">
           <h1>Aktivitas Saya</h1>

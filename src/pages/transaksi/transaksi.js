@@ -80,7 +80,7 @@ export default function Transaksi() {
           {
             pointInformation.map( p =>
                 <div className="items">
-                  <img className="trash-type" src={p.img} />
+                  <img className="trash-type" src={p.img} alt="trashtype"/>
                   <p>{p.item}</p>
                   <p>{p.point}</p>
                 </div>

@@ -5,12 +5,11 @@ import EmailIcon from '@mui/icons-material/Email';
 import KeyIcon from '@mui/icons-material/Key';
 import { Link } from "react-router-dom";
 // import store from "../../components/core/store";
-import axios from "axios";
+
 import { useState,useEffect,useCallback } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import {useNavigate} from 'react-router-dom';
-import Home from "../home/home";
-import Register from "./register"
+
 import LoginSuccess from "./alerts/LoginSuccess";
 import LoginFailed from "./alerts/LoginFailed";
 import {hadLogin} from '../../components/core/slice';
@@ -107,7 +106,7 @@ const Login = () => {
                   {/* button href="/" it made the form doesnt works tho...*/}
                 </Box>
                 <Link to="/register">
-                  <a className= "noakun">belum punya akun?</a>
+                  <p className= "noakun">belum punya akun?</p>
                 </Link>
               </FormControl>
               </form>

@@ -9,7 +9,6 @@ export default function A1() {
     return (
       <div className="page-edukasi edukasi-container">
         <div className="A-Wrapper">
-          {/* <h1 className="A-title">Pengertian dan Perbedaan Sampah Organik dan Anorganik</h1> */}
           <h1 className="A-title">{title}</h1>
           <img src={img} alt="jpg" className='icon c1'></img>  
           <article className="A-content">

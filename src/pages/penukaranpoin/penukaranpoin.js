@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import "./penukaran.css";
 import { Link } from "react-router-dom";
@@ -28,7 +29,7 @@ export default function PenukaranPoin() {
 
   return (
     <div className="page sub-container">
-      <LeftPanel />
+      <div className="PLPanel"><LeftPanel /></div>
       <div className="content-wrap">
         <div className="title-wrapper">
           <h1>Redeem Point</h1>

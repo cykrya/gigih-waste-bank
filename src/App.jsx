@@ -1,8 +1,10 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from 'react';
-import  { useEffect, useState } from "react";
-import { useSelector, useDispatch } from 'react-redux';
+import  { useEffect } from "react";
+import { useSelector } from 'react-redux';
+import { Provider } from "react-redux";
+import store from "./components/core/store";
 
 import Header from './components/Header/header';
 import SideBar from './components/SideBar/sidebar';
@@ -24,7 +26,6 @@ import Editprofile from './pages/editprofile';
 export default function App() {
   const test1=((useSelector((state)=>state.profile)).email);
   const test2=((useSelector((state)=>state.profile)).hadLogin);
-  
   const test3=((useSelector((state)=>state.profile)).nama);
 
   useEffect (()=>{
@@ -35,7 +36,7 @@ export default function App() {
 
   if(test2){ 
     return (
-      <>
+      <Provider store={store}>
        <div className="App">
         <Router>
           <Header />
@@ -59,32 +60,34 @@ export default function App() {
             </div>
         </Router>
       </div>
-      </>
+      </Provider>
     );
   }
 
   return (
-    <div className="App">
-      <Router>
-        <Header />
-          <div className="main-container">
-            <SideBar />
-            <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route exact path="/login" element={<Login />} />
-              <Route exact path="/register" element={<Register />} />
-              <Route exact path="/transaksi" element={<Login />} />
-              <Route exact path="/edukasi" element={<Edukasi />} />
-              <Route exact path="/penukaranpoin" element={<Login />} />
-              <Route exact path="/histori" element={<Login />} />
-              <Route exact path="/profile" element={<Login />} />
-              <Route exact path="/Aone" element={<A1/>} />
-              <Route exact path="/Atwo" element={<A2/>} />
-              <Route exact path="/Athree" element={<A3/>} />
-            </Routes>
-          </div>
-      </Router>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <Router>
+          <Header />
+            <div className="main-container">
+              <SideBar />
+              <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route exact path="/login" element={<Login />} />
+                <Route exact path="/register" element={<Register />} />
+                <Route exact path="/transaksi" element={<Login />} />
+                <Route exact path="/edukasi" element={<Edukasi />} />
+                <Route exact path="/penukaranpoin" element={<Login />} />
+                <Route exact path="/histori" element={<Login />} />
+                <Route exact path="/profile" element={<Login />} />
+                <Route exact path="/Aone" element={<A1/>} />
+                <Route exact path="/Atwo" element={<A2/>} />
+                <Route exact path="/Athree" element={<A3/>} />
+              </Routes>
+            </div>
+        </Router>
+      </div>
+    </Provider>
   )
 }
 
