@@ -68,7 +68,7 @@ const Gender = [
     console.log("umur: "+test4);
     console.log("nama alamat: "+test5);
     console.log("jenis kelamin: "+test6);
-  },[test1]);
+  },[test1, test2, test3, test4, test5, test6]);
 
   useEffect(() => {
     setTimeout(() => {
@@ -131,7 +131,7 @@ const Gender = [
                   <span>
                     <IconTextField  onChange={(e) => setprofPassword(e.target.value)}
                       label="Password"
-                      type="current-password"
+                      type="password"
                       size="small"
                       sx={{width: '50ch',fontSize: 12}}
                       iconStart={<KeyIcon sx={{ color: "black"}} />}
