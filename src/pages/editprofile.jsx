@@ -11,7 +11,7 @@ import NumbersIcon from '@mui/icons-material/Numbers';
 import HomeIcon from '@mui/icons-material/Home';
 
 import { useSelector, useDispatch } from 'react-redux';
-import {email, password,nama,umur,alamat,jeniskel,hadLogin} from '../components/core/slice'
+import {email, password,nama,umur,alamat,jeniskel} from '../components/core/slice'
 import RightPanel from "../components/PagePanel/rightpanel";
 import LeftPanel from "../components/PagePanel/leftpanel"; 
 
@@ -94,7 +94,7 @@ const Gender = [
     setprofAge(test4);
     setprofAddress(test5);
     setprofGender(test6);
-  },[dispatch]);
+  },[test1, test2, test3, test4, test5, test6]);
 
 
     return (

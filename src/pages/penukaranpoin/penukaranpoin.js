@@ -6,7 +6,6 @@ import RightPanel from "../../components/PagePanel/rightpanel";
 import LeftPanel from "../../components/PagePanel/leftpanel"; 
 
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import Popup from "reactjs-popup";
 
 export default function PenukaranPoin() {
   const [data, setData] = useState([]);
