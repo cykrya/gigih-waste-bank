@@ -31,10 +31,12 @@
     font-size: 12px;
 }
 
-/* div .login {
-    height: 85vh;
+div .login {
+    margin-top: 100px;
+    margin-left: 250px;
 }
 
 div .register {
-    height: 85vh;
-} */
+    margin-top: 100px;
+    margin-left: 250px;
+}
