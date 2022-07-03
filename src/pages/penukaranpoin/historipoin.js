@@ -16,7 +16,7 @@ export default function HistoriPoin() {
   useEffect(() => {
     const getData = async () => {
       try {
-        const res = await fetch("https://gwb-api.herokuapp.com/api/points?populate=*&filters[user_id][id]=5").then(
+        const res = await fetch(`${process.env.REACT_APP_API_ENDPOINT}/points?populate=*&filters[user_id][id]=5`).then(
           (response) => response.json()
         );
         setData(res.data);

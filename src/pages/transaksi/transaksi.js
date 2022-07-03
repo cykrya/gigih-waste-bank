@@ -31,11 +31,11 @@ export default function Transaksi() {
     e.preventDefault();
     setPending(true);
     try{const res = await fetch(
-      `https://gwb-api.herokuapp.com/api/transactions/${code}`
+      `${process.env.REACT_APP_API_ENDPOINT}/transactions/${code}`
     ).then((response) => response.json())
     if (res.data.attributes.is_confirmed === false) {
       const res = await fetch(
-        `https://gwb-api.herokuapp.com/api/transactions/${code}`,
+        `${process.env.REACT_APP_API_ENDPOINT}/transactions/${code}`,
         {
           method: "PUT",
           headers: {
