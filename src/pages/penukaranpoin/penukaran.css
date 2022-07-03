@@ -1,6 +1,5 @@
 .sub-container {
     width: 100%;
-    margin-left: 100px;
 }
 
 .content {
@@ -93,6 +92,7 @@
     width: 100%;
 }
 
-.PLPanel {
+
+/* .PLPanel {
     padding-left: 262px;
-}
+} */

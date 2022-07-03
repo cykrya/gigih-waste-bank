@@ -33,8 +33,10 @@
     margin-top: 250px;
     display: flex;
     flex-direction: column;
-    align-items: center;}
+    align-items: center;
+}
 
-    .HLPanel {
-        padding-left: 262px;
-    }
+
+/* .HLPanel {
+    margin-left: 162.25px;
+} */
