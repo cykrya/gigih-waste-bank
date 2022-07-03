@@ -24,6 +24,7 @@ Gigih Waste Bank is a service that provides benefits to people while educates th
 <center><img src="/images/inputtoken.png" alt="Preview Image" /></center>
 
 #### Redeem Point Menu
+<center><img src="/images/redeempoinfigma.png" alt="Preview Image" /></center>
 <center><img src="/images/redeemhistory.png" alt="Preview Image" /></center>
 
 #### History Menu
@@ -62,10 +63,10 @@ Tutorial to instal Gigih Waste Bank:
      npm install
   ```
 4. Set up the environment variables
+ write the code below on your environment
   ```bash
-    
+    REACT_APP_API_ENDPOINT = https://gwb-api.herokuapp.com//api
   ```
-    write the code above on environment, which contains your Client ID
 5. Start the server to open
   ```bash
      npm start
