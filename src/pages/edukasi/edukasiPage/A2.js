@@ -3,7 +3,7 @@ import data from "./data.json";
 export default function A2() {
   const title= data[1].title;
   const paragraph= data[1].paragraphs;
-  const img= data[0].img;
+  const img= data[1].img;
     return (
       <div className="page-edukasi edukasi-container">
       <div className="A-Wrapper">
