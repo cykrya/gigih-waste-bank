@@ -1,7 +1,7 @@
 import "./sidebar.css";
 import { Link } from "react-router-dom";
-import  { useEffect, useState } from "react";
-import { useSelector, useDispatch } from 'react-redux';
+import  { useEffect } from "react";
+import { useSelector } from 'react-redux';
 
 export default function SideBar() {
   const test1=((useSelector((state)=>state.profile)).email);

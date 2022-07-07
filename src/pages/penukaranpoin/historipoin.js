@@ -6,9 +6,8 @@ import RightPanel from "../../components/PagePanel/rightpanel";
 import LeftPanel from "../../components/PagePanel/leftpanel"; 
 
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import Popup from "reactjs-popup";
 import InboxIcon from "@mui/icons-material/Inbox";
-import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
+
 
 export default function HistoriPoin() {
     const [data, setData] = useState([]);
