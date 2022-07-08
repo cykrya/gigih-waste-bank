@@ -28,12 +28,24 @@
     display: inline-block;
 }
 
-.history-logo {
+.icon-wrapper {
     margin-top: 102px;
     background: #EBEBEB;
     color: black;
     float: right;
     position: absolute;
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+}
+.icon-wrapper h2 {
+    margin: 0;
+}
+.coin-transaksi {
+    margin-right: 60px;
+}
+.history-logo {
+    color: #000000;
 }
 
 .inputToken-wrapper {
