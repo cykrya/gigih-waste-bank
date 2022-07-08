@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./penukaran.css";
 import { Link } from "react-router-dom";
 
@@ -7,9 +7,11 @@ import RightPanel from "../../components/PagePanel/rightpanel";
 import LeftPanel from "../../components/PagePanel/leftpanel";
 
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import PaidOutlinedIcon from '@mui/icons-material/PaidOutlined';
 
 export default function PenukaranPoin() {
   const [data, setData] = useState([]);
+  const [wallet, setWallet] = useState([]);
 
   useEffect(() => {
     const getData = async () => {
@@ -22,20 +24,43 @@ export default function PenukaranPoin() {
         console.log(error);
       }
     };
+    const getWallet = async () => {
+      try {
+        const res = await fetch(
+          `${process.env.REACT_APP_API_ENDPOINT}/users/5`
+        ).then((response) => response.json());
+        setWallet(res.wallet);
+      } catch (err) {
+        console.log(err.message);
+      }
+    };
     getData();
+    getWallet();
   }, []);
 
   console.log(data);
 
   return (
     <div className="page sub-container">
-      <div className="PLPanel"><LeftPanel /></div>
+      <LeftPanel />
       <div className="content-wrap">
         <div className="title-wrapper">
           <h1>Redeem Point</h1>
-          <Link className="time-icon" to="/historipoin">
-            <AccessTimeIcon sx={{ fontSize: 40 }} style={{ fill: "#00000" }} />
-          </Link>
+          <div className="icon-indikator">
+            <div className="coin-indikator coin-transaksi">
+              <PaidOutlinedIcon
+                sx={{ fontSize: 24 }}
+                style={{ fill: "#000000" }}
+              />
+              <p>{wallet}</p>
+            </div>{" "}
+            <Link className="time-icon" to="/historipoin">
+              <AccessTimeIcon
+                sx={{ fontSize: 40 }}
+                style={{ fill: "#00000" }}
+              />
+            </Link>
+          </div>
         </div>
         <div className="content">
           {data.length === 0 ? (
@@ -52,27 +77,48 @@ export default function PenukaranPoin() {
                 }-${date < 10 ? `0${date}` : `${date}`}`;
 
                 const postData = async () => {
-                  const res = await fetch(
-                    `${process.env.REACT_APP_API_ENDPOINT}/points`,
-                    {
-                      method: "POST",
-                      headers: {
-                        "Content-Type": "application/json",
-                      },
-                      body: JSON.stringify({
-                        data: {
-                          amount: 1,
-                          reedem_date: `${currentDate}`,
-                          user_id: [5],
-                          shop: [item.id],
+                  var newWallet = parseInt(wallet);
+                  if (newWallet >= item.attributes.price) {
+                    const res = await fetch(
+                      `${process.env.REACT_APP_API_ENDPOINT}/points`,
+                      {
+                        method: "POST",
+                        headers: {
+                          "Content-Type": "application/json",
                         },
-                      }),
-                    }
-                  ).then(() =>
-                    alert(
-                      `SELAMAT ANDA BERHASIL MENUKARKAN ${item.attributes.price} POIN`
-                    )
-                  );
+                        body: JSON.stringify({
+                          data: {
+                            amount: 1,
+                            reedem_date: `${currentDate}`,
+                            user_id: [5],
+                            shop: [item.id],
+                          },
+                        }),
+                      }
+                    ).then(async() => {
+                      alert(`SELAMAT ANDA BERHASIL MENUKARKAN ${item.attributes.price} POIN`);
+                      try {
+                        
+                        const add = await fetch(
+                          `${process.env.REACT_APP_API_ENDPOINT}/users/5`,
+                          {
+                            method: "PUT",
+                            headers: {
+                              "Content-Type": "application/json",
+                            },
+                            body: JSON.stringify({
+                              wallet: [newWallet - item.attributes.price],
+                            }),
+                          }
+                        );
+                      } catch (err) {
+                        console.log(err.message);
+                      }
+                      window.location.reload();
+                    });                   
+                  } else {
+                    alert("saldo anda kurang");
+                  }
                 };
 
                 return (

@@ -33,7 +33,7 @@ export default function HistoriPoin() {
         <div className="content-wrap">
           <div className="title-wrapper">
             <h1>Redeem Point</h1>
-            <AccessTimeIcon className="time-icon" sx={{ fontSize: 40 }}/>
+            <AccessTimeIcon className="time-icon icon-indikator" sx={{ fontSize: 40 }}/>
           </div>
         <div className="content">
           <div className="poin-content">
