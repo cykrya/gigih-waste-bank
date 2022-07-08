@@ -39,11 +39,11 @@ const Profile = () => {
   const Logout = () => {
     dispatch(hadLogin(false));
   }
-  const test1=((useSelector((state)=>state.profile)).email);
-  const test3=((useSelector((state)=>state.profile)).nama);
-  const test4=((useSelector((state)=>state.profile)).umur);
-  const test5=((useSelector((state)=>state.profile)).alamat);
-  const test6=((useSelector((state)=>state.profile)).jeniskel);
+  const AEmail=((useSelector((state)=>state.profile)).email);
+  const ANama=((useSelector((state)=>state.profile)).nama);
+  const AUmur=((useSelector((state)=>state.profile)).umur);
+  const AAlamat=((useSelector((state)=>state.profile)).alamat);
+  const AJenisKel=((useSelector((state)=>state.profile)).jeniskel);
 
 
     return (
@@ -55,17 +55,17 @@ const Profile = () => {
           </div>
           <div className="profileContent">
             <AccountCircleIcon sx={{ fontSize: 55 ,pt:3  }}/>
-            <p className="profileName">{test3}</p>
+            <p className="profileName">{ANama}</p>
             <div className="profileDataWrapper">
               <div className="profileData">
                 <p>Email</p>
-                <p className="data">{test1}</p>
+                <p className="data">{AEmail}</p>
                 <p>Umur</p>
-                <p className="data">{test4}</p>
+                <p className="data">{AUmur}</p>
                 <p>Jenis Kelamin</p>
-                <p className="data">{test6}</p>
+                <p className="data">{AJenisKel}</p>
                 <p>Alamat</p>
-                <p className="data">{test5}</p>
+                <p className="data">{AAlamat}</p>
               </div>
             </div>
             <ThemeProvider theme={theme1}>

@@ -44,7 +44,7 @@ return (
         showStatus={false}>
         {
             education.map( e =>
-                <div>
+                <div key={`${e}`}>
                     <img src={e.img} width="671px" height="352px" alt="education"/>
                     <Link to={e.link}>
                     <p className="caption">{e.title}</p>
@@ -56,7 +56,7 @@ return (
         </div>
         {
             aboutUs.map( a =>
-                <div className="aboutUs">
+                <div key={`${a}`} className="aboutUs">
                     <h1>{a.title}</h1>
                     <p>{a.desc}</p>
                 </div>

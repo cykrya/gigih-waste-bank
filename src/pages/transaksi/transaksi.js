@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react";
+/* eslint-disable no-unused-vars */
 import "./transaksi.css";
-import PaidOutlinedIcon from '@mui/icons-material/PaidOutlined';
-import Popup from "reactjs-popup";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import PaidOutlinedIcon from "@mui/icons-material/PaidOutlined";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import Popup from "reactjs-popup";
 
 import RightPanelL from "../../components/PagePanel/rightpanelL";
 import LeftPanelL from "../../components/PagePanel/leftpanelL";
@@ -108,14 +109,17 @@ export default function Transaksi() {
           <h1>Transaksi</h1>
           <div className="icon-wrapper">
             <div className="coin-indikator coin-transaksi">
-            <PaidOutlinedIcon sx={{fontSize: 24}} style={{ fill: '#000000' }}/>
-            <p>{wallet}</p>
+              <PaidOutlinedIcon
+                sx={{ fontSize: 24 }}
+                style={{ fill: "#000000" }}
+              />
+              <p>{wallet}</p>
             </div>
-          <Link className="history-logo" to="/histori">
-            <AccessTimeIcon
-              sx={{ background: "#EBEBEB", fontSize: 50, width: 50 }}
-            />
-          </Link>
+            <Link className="history-logo" to="/histori">
+              <AccessTimeIcon
+                sx={{ background: "#EBEBEB", fontSize: 50, width: 50 }}
+              />
+            </Link>
           </div>
         </div>
         <div className="inputToken-wrapper">

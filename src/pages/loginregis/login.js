@@ -82,6 +82,7 @@ const Login = () => {
                   <IconTextField onChange={(e) => setLogEmail(e.target.value)}
                     label="Email"
                     type="text"
+                    autoComplete="username"
                     size="small"
                     sx={{width: '50ch',fontSize: 12}}
                     iconStart={<EmailIcon sx={{ color: "black"}}/>}
@@ -92,7 +93,8 @@ const Login = () => {
                   <span>
                     <IconTextField onChange={(e) => setLogPassword(e.target.value)}
                       label="Password"
-                      type="current-password"
+                      type="password"
+                      autoComplete="current-password"
                       size="small"
                       sx={{width: '50ch',fontSize: 12}}
                       iconStart={<KeyIcon sx={{ color: "black"}} />}

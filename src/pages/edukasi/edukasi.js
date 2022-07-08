@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+/* eslint-disable no-sequences */
 import "./edukasi.css";
 import data from "./edukasiPage/data.json";
 import ShowEdukasi from "./ShowEdukasi";

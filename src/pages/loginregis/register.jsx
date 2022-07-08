@@ -54,21 +54,21 @@ const Gender = [
   const [Open2, setOpen2] = useState(false);
   const dispatch = useDispatch()
   
-  const test1=((useSelector((state)=>state.profile)).email);
-  const test2=((useSelector((state)=>state.profile)).password);
-  const test3=((useSelector((state)=>state.profile)).nama);
-  const test4=((useSelector((state)=>state.profile)).umur);
-  const test5=((useSelector((state)=>state.profile)).alamat);
-  const test6=((useSelector((state)=>state.profile)).jeniskel);
+  const AEmail=((useSelector((state)=>state.profile)).email);
+  const APassword=((useSelector((state)=>state.profile)).password);
+  const ANama=((useSelector((state)=>state.profile)).nama);
+  const AUmur=((useSelector((state)=>state.profile)).umur);
+  const AAlamat=((useSelector((state)=>state.profile)).alamat);
+  const AJenisKel=((useSelector((state)=>state.profile)).jeniskel);
   
   useEffect (()=>{
-    console.log("nama akun: "+test1);
-    console.log("nama password: "+test2);
-    console.log("nama user: "+test3);
-    console.log("umur: "+test4);
-    console.log("nama alamat: "+test5);
-    console.log("jenis kelamin: "+test6);
-  },[test1]);
+    console.log("nama akun: "+AEmail);
+    console.log("nama password: "+APassword);
+    console.log("nama user: "+ANama);
+    console.log("umur: "+AUmur);
+    console.log("nama alamat: "+AAlamat);
+    console.log("jenis kelamin: "+AJenisKel);
+  },[AEmail, APassword, ANama, AUmur, AAlamat, AJenisKel]);
 
   useEffect(() => {
     setTimeout(() => {
@@ -131,7 +131,7 @@ const Gender = [
                   <span>
                     <IconTextField  onChange={(e) => setprofPassword(e.target.value)}
                       label="Password"
-                      type="current-password"
+                      type="password"
                       size="small"
                       sx={{width: '50ch',fontSize: 12}}
                       iconStart={<KeyIcon sx={{ color: "black"}} />}
