@@ -51,6 +51,7 @@ export default function HistoriPoin() {
                   date={value.attributes.reedem_date}
                   type={value.attributes.shop.data.attributes.item_type}
                   amount={value.attributes.amount}
+                  satuan={""}
                   />
                 );
                })}

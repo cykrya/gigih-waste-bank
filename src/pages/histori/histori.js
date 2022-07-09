@@ -65,6 +65,7 @@ export default function Histori() {
                     date={Value.attributes.transaction_date}
                     type={Value.attributes.trash_type}
                     amount={Value.attributes.amount}
+                    satuan={"Kg"}
                   />
                 );
               })}
