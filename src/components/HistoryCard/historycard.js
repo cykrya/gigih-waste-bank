@@ -1,7 +1,7 @@
 import PaidOutlinedIcon from '@mui/icons-material/PaidOutlined';
 import "./historycard.css";
 
-export default function HistoryCard({ point, date, type, amount }) {
+export default function HistoryCard({ point, date, type, amount, satuan }) {
   return (
     <div className="history-card">
       <div className="card-top">
@@ -21,7 +21,7 @@ export default function HistoryCard({ point, date, type, amount }) {
       </div>
       <div className="card-detail amount">
       <h3>JUMLAH</h3>
-      <p>{amount} Kg</p>
+      <p>{amount} {satuan}</p>
       </div>
     </div>
   );
