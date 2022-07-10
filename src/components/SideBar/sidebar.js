@@ -9,11 +9,11 @@ export default function SideBar() {
     
   const test3=((useSelector((state)=>state.profile)).nama);
   
-  useEffect (()=>{
-    console.log("nama akun: "+test1);
-    console.log("nama user: "+test3);
-    console.log("sudah log in?: "+test2);
-  });
+  // useEffect (()=>{
+  //   console.log("nama akun: "+test1);
+  //   console.log("nama user: "+test3);
+  //   console.log("sudah log in?: "+test2);
+  // });
   
 if(test2){
 return (
