@@ -61,14 +61,14 @@ const Gender = [
   const AAlamat=((useSelector((state)=>state.profile)).alamat);
   const AJenisKel=((useSelector((state)=>state.profile)).jeniskel);
   
-  useEffect (()=>{
-    console.log("nama akun: "+AEmail);
-    console.log("nama password: "+APassword);
-    console.log("nama user: "+ANama);
-    console.log("umur: "+AUmur);
-    console.log("nama alamat: "+AAlamat);
-    console.log("jenis kelamin: "+AJenisKel);
-  },[AEmail, APassword, ANama, AUmur, AAlamat, AJenisKel]);
+  // useEffect (()=>{
+  //   console.log("nama akun: "+AEmail);
+  //   console.log("nama password: "+APassword);
+  //   console.log("nama user: "+ANama);
+  //   console.log("umur: "+AUmur);
+  //   console.log("nama alamat: "+AAlamat);
+  //   console.log("jenis kelamin: "+AJenisKel);
+  // },[AEmail, APassword, ANama, AUmur, AAlamat, AJenisKel]);
 
   useEffect(() => {
     setTimeout(() => {
@@ -84,12 +84,12 @@ const Gender = [
 
   const InsertProfileData = (e) => {
     e.preventDefault();
-    console.log(profemail);
-    console.log(profpassword);  
-    console.log(profname);  
-    console.log(profage);  
-    console.log(profaddress);  
-    console.log(profgender);
+    // console.log(profemail);
+    // console.log(profpassword);  
+    // console.log(profname);  
+    // console.log(profage);  
+    // console.log(profaddress);  
+    // console.log(profgender);
    
     dispatch(email(profemail));
     dispatch(password(profpassword));
@@ -99,7 +99,7 @@ const Gender = [
     dispatch(jeniskel(profgender));
 
     if ((profemail.length>1) & (profpassword.length>1)& (profname.length>1) & (profaddress.length>1)){
-      console.log("userdata ada");
+      // console.log("userdata ada");
       setOpen(true);
       dispatch(hadLogin(true));
       return{
@@ -107,7 +107,7 @@ const Gender = [
       }
     }
       setOpen2(true);
-      console.log("user data tidak ditemukan");
+      // console.log("user data tidak ditemukan");
   };
     return (
       <ThemeProvider theme={theme}>

@@ -26,7 +26,7 @@ export default function HistoriPoin() {
     getData();
   }, []);
 
-  console.log(data);
+  // console.log(data);
     return (
         <div className="page sub-container">
         <LeftPanel />

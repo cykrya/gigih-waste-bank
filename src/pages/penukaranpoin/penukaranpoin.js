@@ -38,7 +38,7 @@ export default function PenukaranPoin() {
     getWallet();
   }, []);
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <div className="page sub-container">

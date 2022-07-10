@@ -58,12 +58,12 @@ const Gender = [
     
   const InsertProfileData = (e) => {
     e.preventDefault();
-    console.log(profemailPhone);
-    console.log(profpassword);  
-    console.log(profname);  
-    console.log(profage);  
-    console.log(profaddress);  
-    console.log(profgender);
+    // console.log(profemailPhone);
+    // console.log(profpassword);  
+    // console.log(profname);  
+    // console.log(profage);  
+    // console.log(profaddress);  
+    // console.log(profgender);
     dispatch(email(profemailPhone));
     dispatch(password(profpassword));  
     dispatch(nama(profname));  
@@ -82,12 +82,12 @@ const Gender = [
   const AJenisKel=((useSelector((state)=>state.profile)).jeniskel);
   
   useEffect (()=>{
-    console.log("nama akun: "+AEmail);
-    console.log("nama password: "+APassword);
-    console.log("nama user: "+ANama);
-    console.log("umur: "+AUmur);
-    console.log("nama alamat: "+AAlamat);
-    console.log("jenis kelamin: "+AJenisKel);
+    // console.log("nama akun: "+AEmail);
+    // console.log("nama password: "+APassword);
+    // console.log("nama user: "+ANama);
+    // console.log("umur: "+AUmur);
+    // console.log("nama alamat: "+AAlamat);
+    // console.log("jenis kelamin: "+AJenisKel);
     setprofEmailPhone(AEmail);
     setprofPassword(APassword);
     setprofName(ANama);

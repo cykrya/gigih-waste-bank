@@ -52,13 +52,13 @@ const Login = () => {
 
   const get = (e) => {
     e.preventDefault();
-    console.log("checking data");
-    console.log("logEmail:" + logEmail);
-    console.log("loginEmail:" + loginEmail);
-    console.log("logPassword:" + logPassword);
-    console.log("loginPassword:" + loginPassword);
+    // console.log("checking data");
+    // console.log("logEmail:" + logEmail);
+    // console.log("loginEmail:" + loginEmail);
+    // console.log("logPassword:" + logPassword);
+    // console.log("loginPassword:" + loginPassword);
     if ((logEmail===loginEmail) & (logPassword===loginPassword)){
-      console.log("userdata ada");
+      // console.log("userdata ada");
       setOpen(true);
       dispatch(hadLogin(true));
       nav();
@@ -67,7 +67,7 @@ const Login = () => {
       }
     }
       setOpen2(true);
-      console.log("user data tidak ditemukan");
+      // console.log("user data tidak ditemukan");
   };
     return (
       <ThemeProvider theme={theme}>

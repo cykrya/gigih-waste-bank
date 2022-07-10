@@ -25,7 +25,7 @@ export default function Histori() {
     getData();
   }, []);
 
-  console.log(data);
+  // console.log(data);
   return (
     <div className="page sub-container">
      <LeftPanel />
